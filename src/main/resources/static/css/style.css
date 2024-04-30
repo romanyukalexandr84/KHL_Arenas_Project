@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+    color: #00FFFF;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link {
+    margin-top: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.authbutton {
+    height: 65px;
+    width: 200px;
+    color: white;
+    background-color: green;
+    font-size: 18px;
+    border-radius: 40px;
+    border: none;
+}
+
+.authbutton:hover {
+    color: black;
+    background-color: brown;
+}
+
+html {
+    background: url(/css/welcomepage.jpg) no-repeat center center fixed;
+    background-size: cover;
+}

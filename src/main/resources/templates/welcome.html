@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+<body class="bod">
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<h2>Уважаемые посетители</h2>
+<h2>На данном сайте вы можете получить информацию об аренах всех 23 клубов Континентальной хоккейной лиги</h2>
+
+<div class="link">
+<form th:action="@{/login}" method="GET" style="display: block;">
+    <button class="authbutton" type="submit">&nbsp;&nbsp;&nbsp;Авторизоваться&nbsp;&nbsp;&nbsp;</button>
+</form>
+</div>
+
+</body>
+</html>

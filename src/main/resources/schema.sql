@@ -1,24 +1,21 @@
 CREATE TABLE IF NOT EXISTS cities (
     id SERIAL PRIMARY KEY,
-    name VARCHAR (32) NOT NULL
+    name VARCHAR (32) NOT NULL UNIQUE
     );
-    
-   
+
 CREATE TABLE IF NOT EXISTS clubs (
     id SERIAL PRIMARY KEY,
-    name VARCHAR (32) NOT NULL
+    name VARCHAR (32) NOT NULL UNIQUE
     );
-    
-   
+
 CREATE TABLE IF NOT EXISTS activities (
     id SERIAL PRIMARY KEY,
-    name VARCHAR (128) NOT NULL
+    name VARCHAR (128) NOT NULL UNIQUE
     );
-    
-   
+
 CREATE TABLE IF NOT EXISTS arenas (
     id SERIAL PRIMARY KEY,
-    name VARCHAR (32) NOT NULL,
+    name VARCHAR (32) NOT NULL UNIQUE,
     club_id INT REFERENCES clubs (id),
     city_id INT REFERENCES cities (id),
     capacity INT NOT NULL,
