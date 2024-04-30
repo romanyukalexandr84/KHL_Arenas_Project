@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
+//аспект для логирования вызовов методов, помеченных аннотацией TrackUserAction
 @Aspect
 @Component
 @Log
