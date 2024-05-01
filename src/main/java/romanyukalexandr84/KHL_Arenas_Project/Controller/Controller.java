@@ -35,6 +35,20 @@ public class Controller {
         return "user-profile";
     }
 
+    //отдаем карточку арены по id
+    @GetMapping("/arena/{id}")
+    public String getSingleArena(Model model, @PathVariable Integer id) {
+        model.addAttribute("arena", userService.getArenaById(id));
+        model.addAttribute("club", userService.getClubNameByArenaId(id));
+        model.addAttribute("city", userService.getCityNameByArenaId(id));
+        model.addAttribute("activities", userService.getActivitiesByArenaId(id));
+        return "arena";
+    }
+
+
+
+
+
     //отдаем страницу администратора
     @GetMapping("/admin-profile")
     public String getViewAsAdmin(Model model) {

@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS arenas (
     city_id INT REFERENCES cities (id),
     capacity INT NOT NULL,
     entry_year INT NOT NULL,
-    gallery_url VARCHAR (64) NOT NULL,
+    gallery_url VARCHAR (128) GENERATED ALWAYS AS ('https://raw.githubusercontent.com/romanyukalexandr84/Images/main/' || REPLACE(name,' ','%20') || '/') STORED,
     tickets_url VARCHAR (64) NOT NULL,
     attendance INT NOT NULL,
     fill_percentage INT GENERATED ALWAYS AS (ROUND(( attendance::NUMERIC/capacity::NUMERIC ) * 100)) STORED,

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+    <link th:href="@{/css/userpagestyle.css}" rel="stylesheet">
+</head>
+<body>
+
+<h1 class="center">КОНТИНЕНТАЛЬНАЯ ХОККЕЙНАЯ ЛИГА</h1>
+
+<div class ="header">
+    <div class="itfirst"><img class="itfirst" th:src="@{/css/logo.png}" alt="Лого"/></div>
+    <div class="it"><img class="flag" th:src="@{/css/russia.jpg}" alt="Флаг"/></div>
+    <div class="it"><img class="flag" th:src="@{/css/belarus.jpg}" alt="Флаг"/></div>
+    <div class="it"><img class="flag" th:src="@{/css/kazakhstan.jpg}" alt="Флаг"/></div>
+    <div class="it"><img class="flag" th:src="@{/css/china.jpg}" alt="Флаг"/></div>
+</div>
+
+<h1 class="center">ВСЕ АРЕНЫ:</h1>
+
+<span><b>Отсортировать по:</b></span>&nbsp;
+<a href="../../arenas/sortedbyname" class="button2">имя (a-z)</a>&nbsp;&nbsp;&nbsp;
+<a href="../../arenas/sortedbygender" class="button2">пол (ж-м)</a>&nbsp;&nbsp;&nbsp;
+<a href="../../arenas" class="button2">id</a>
+
+<div class="content">
+    <tr th:each="a: ${arenas}">
+        <div class="item">
+            <img class="preview" th:src="${a.galleryURL} + '1.jpg'" alt="Изображение отсутствует"/>
+            <div class="item-info">
+                <h3 th:text="${a.id}"></h3>
+                <h3 th:text="${a.name}"></h3>
+                <a th:href="@{../../arena/{id}(id=${a.id})}" class="button">Смотреть</a>
+            </div>
+        </div>
+    </tr>
+</div>
+
+</body>
+</html>

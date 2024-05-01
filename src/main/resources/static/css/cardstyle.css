@@ -1,0 +1,54 @@
+* {
+   box-sizing: border-box;
+}
+
+.item {
+   width: 300px;
+   text-align: center;
+   margin: 0 auto;
+   border-bottom: 2px solid #F5F5F5;
+   background: white;
+   font-family: "Open Sans";
+   transition: .3s ease-in;
+}
+
+.item:hover {
+   border-bottom: 2px solid #fc5a5a;
+}
+
+.item img {
+   display: block;
+   width: 100%;
+}
+
+.item-info {
+   background: #D5D5D5;
+   padding: 15px 0;
+}
+
+.item-info h3 {
+   font-size: 18px;
+   font-weight: 400;
+   color: #444444;
+   margin: 0 0 10px 0;
+}
+
+.item:hover .button {
+   background: #fc5a5a;
+}
+
+.item:hover .button2 {
+   background: #fc5a5a;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}

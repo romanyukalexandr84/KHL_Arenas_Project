@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Инфо</title>
+    <link th:href="@{/css/cardstyle.css}" rel="stylesheet">
+</head>
+<body>
+
+<h1 class="center">Характеристики объекта</h1>
+
+<div class="info">
+    <div class="item">
+        <img th:src="${arena.galleryURL} + '1.jpg'" alt="Изображение отсутствует"/>
+        <div class="item-info">
+
+            <h3 th:text="${arena.name}"></h3>
+            <p class="properties" th:text="${club}"></p>
+            <p class="properties" th:text="${arena.capacity}"></p>
+            <p class="properties" th:text="${arena.entryYear}"></p>
+            <p class="properties" th:text="${arena.galleryURL}"></p>
+
+            <a href="javascript:history.back()" class="button">Вернуться</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

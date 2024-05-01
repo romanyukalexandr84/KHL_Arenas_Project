@@ -6,6 +6,7 @@ import romanyukalexandr84.KHL_Arenas_Project.Aspect.TrackUserAction;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
 
+import java.util.Arrays;
 import java.util.List;
 
 //сервис пользователя - методы бизнес-логики для пользователя
@@ -25,4 +26,24 @@ public class UserService {
     public Arena getArenaById(Integer id) {
         return arenasRepo.findById(id).orElse(null);
     }
+
+    //Получение названия клуба по id арены
+    @TrackUserAction
+    public String getClubNameByArenaId(Integer id) {
+        return arenasRepo.findClubByArenaId(id);
+    }
+
+    //Получение названия города по id арены
+    @TrackUserAction
+    public String getCityNameByArenaId(Integer id) {
+        return arenasRepo.findCityByArenaId(id);
+    }
+
+    //Получение списка дополнительных услуг по id арены
+    @TrackUserAction
+    public List<String> getActivitiesByArenaId(Integer id) {
+        return Arrays.asList(arenasRepo.findActivityByArenaId(id).replaceAll(", ", "/").split("/"));
+    }
+
+
 }
