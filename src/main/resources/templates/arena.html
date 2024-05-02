@@ -9,41 +9,44 @@
 
 <section class="card">
     <div class="chars1">
-<h1 class="center" th:text="${arena.name}"></h1>
+        <h1 class="center" th:text="${arena.name}"></h1>
 
-<div class="info">
-    <div class="item">
-        <img th:src="${arena.galleryURL} + '2.jpg'" alt="Изображение отсутствует"/>
-        <div class="item-info">
+        <div class="info">
+            <div class="item">
+                <img th:src="${arena.galleryURL} + '2.jpg'" alt="Изображение отсутствует"/>
+                <div class="item-info">
 
-            <h3>Характеристики</h3>
-            <div class="propitems">
+                    <h3>Характеристики</h3>
+                    <div class="propitems">
 
-                <div>
-                    <p class="properties1" th:text="'Клуб: ' + ${club}"></p>
-                    <p class="properties1" th:text="'Город: ' + ${city}"></p>
-                    <p class="properties1" th:text="'Вместимость (чел): ' + ${arena.capacity}"></p>
-                    <p class="properties1" th:text="'Год ввода: ' + ${arena.entryYear}"></p>
+                        <div>
+                            <p class="properties1" th:text="'Клуб: ' + ${club}"></p>
+                            <p class="properties1" th:text="'Город: ' + ${city}"></p>
+                            <p class="properties1"
+                               th:text="'Вместимость (чел): ' + ${#numbers.formatDecimal(arena.capacity, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                            <p class="properties1" th:text="'Год ввода: ' + ${arena.entryYear}"></p>
+                        </div>
+
+                        <div>
+                            <p class="properties2"
+                               th:text="'Средняя посещаемость (чел): ' + ${#numbers.formatDecimal(arena.attendance, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                            <p class="properties2" th:text="'Процент заполняемости: ' + ${arena.fillPercentage}"></p>
+                            <p class="properties2" th:text="'Цена билетов (руб): ' + ${arena.prices}"></p>
+                            <p class="properties2"
+                               th:text="'Доходность за 1 матч, руб: ' + ${#numbers.formatDecimal(arena.revenue, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                        </div>
+
+                    </div>
+
                 </div>
-
-                <div>
-                    <p class="properties2" th:text="'Средняя посещаемость (чел): ' + ${arena.attendance}"></p>
-                    <p class="properties2" th:text="'Процент заполняемости: ' + ${arena.fillPercentage}"></p>
-                    <p class="properties2" th:text="'Цена билетов (руб): ' + ${arena.prices}"></p>
-                    <p class="properties2" th:text="'Доходность за 1 матч, руб: ' + ${#numbers.formatDecimal(arena.revenue, 0, 'WHITESPACE', 0, 'POINT')}"></p>
-                </div>
-
             </div>
-
         </div>
-    </div>
-</div>
     </div>
 
     <div class="chars2">
         <h1 class="serv">Дополнительные услуги</h1>
         <tr th:each="act: ${activities}">
-                    <h3 class="act" th:text="' - ' + ${act}"></h3>
+            <h3 class="act" th:text="' - ' + ${act}"></h3>
         </tr>
 
         <a th:href="@{../../arena/{id}(id=${arena.id})} + '/gallery'" class="button1">Смотреть галерею</a>

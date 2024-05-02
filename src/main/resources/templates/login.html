@@ -6,31 +6,31 @@
     <link th:href="@{/css/loginstyle.css}" rel="stylesheet">
 </head>
 <body>
-    <section>
+<section>
 
-        <div class="signin">
-            <div class="content">
-                <h2>Авторизация</h2>
-                <form th:action="@{/login}" method="post" class="form">
+    <div class="signin">
+        <div class="content">
+            <h2>Авторизация</h2>
+            <form th:action="@{/login}" method="post" class="form">
 
-                    <div class="inputBox">
-                        <label class="lab" for="username">Имя пользователя</label>
-                        <input class="ic" type="text" id="username" name="username"/>
-                    </div>
+                <div class="inputBox">
+                    <label class="lab" for="username">Имя пользователя</label>
+                    <input class="ic" type="text" id="username" name="username"/>
+                </div>
 
-                    <div class="inputBox">
-                        <label class="lab" for="password">Пароль</label>
-                        <input class="ic" type="password" id="password" name="password"/>
-                    </div>
+                <div class="inputBox">
+                    <label class="lab" for="password">Пароль</label>
+                    <input class="ic" type="password" id="password" name="password"/>
+                </div>
 
-                    <div class="inputBox">
-                        <input class="ic" type="submit" value="Войти"/>
-                    </div>
+                <div class="inputBox">
+                    <input class="ic" type="submit" value="Войти"/>
+                </div>
 
-                </form>
-            </div>
+            </form>
         </div>
+    </div>
 
-    </section>
+</section>
 </body>
 </html>

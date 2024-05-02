@@ -9,7 +9,7 @@
 
 <h1 class="center">КОНТИНЕНТАЛЬНАЯ ХОККЕЙНАЯ ЛИГА</h1>
 
-<div class ="header">
+<div class="header">
     <div class="itfirst"><img class="itfirst" th:src="@{/css/logo.png}" alt="Лого"/></div>
     <div class="it"><img class="flag" th:src="@{/css/russia.jpg}" alt="Флаг"/></div>
     <div class="it"><img class="flag" th:src="@{/css/belarus.jpg}" alt="Флаг"/></div>
@@ -19,18 +19,44 @@
 
 <h1 class="center">ВСЕ АРЕНЫ:</h1>
 
-<span><b>Отсортировать по:</b></span>&nbsp;
-<a href="../../arenas/sortedbyname" class="button2">имя (a-z)</a>&nbsp;&nbsp;&nbsp;
-<a href="../../arenas/sortedbygender" class="button2">пол (ж-м)</a>&nbsp;&nbsp;&nbsp;
-<a href="../../arenas" class="button2">id</a>
+<div class="sorting">
+    <span class="sortchoice" th:style="'font-weight: bold;'" th:text="'Пользователь: ' + ${username}"></span>&nbsp;
+    <form th:action="@{/logout}" method="post" style="display: inline;">
+        <button class="out" type="submit">Выйти</button>
+    </form>
+</div>
+
+<div class="sorting">
+    <span class="sortchoice"><b>Сортировать по:</b></span>&nbsp;
+    <a href="../../user-profile/sortedbycapacity" class="button2">вместимости</a>&nbsp;&nbsp;&nbsp;
+    <a href="../../user-profile/sortedbyentryyear" class="button2">новизне</a>&nbsp;&nbsp;&nbsp;
+    <a href="../../user-profile/sortedbyattendance" class="button2">посещаемости</a>&nbsp;&nbsp;&nbsp;
+    <a href="../../user-profile/sortedbyfillpercentage" class="button2">заполняемости</a>&nbsp;&nbsp;&nbsp;
+    <a href="../../user-profile/sortedbyrevenue" class="button2">доходности</a>&nbsp;&nbsp;&nbsp;
+    <a href="../../user-profile" class="button2">сброс</a>
+</div>
 
 <div class="content">
-    <tr th:each="a: ${arenas}">
+    <tr th:each="a, aStat: ${arenas}">
         <div class="item">
             <img class="preview" th:src="${a.galleryURL} + '1.jpg'" alt="Изображение отсутствует"/>
             <div class="item-info">
-                <h3 th:text="${a.id}"></h3>
+                <h3 th:text="${aStat.count}"></h3>
                 <h3 th:text="${a.name}"></h3>
+
+                <div th:switch="${sortingrule}">
+                    <p class="sortrule" th:case="'capacity'"
+                       th:text="'Вместимость: ' + ${#numbers.formatDecimal(a.capacity, 0, 'WHITESPACE', 0, 'POINT')} + ' чел.'"</p>
+                    <p class="sortrule" th:case="'entryyear'" th:text="'Год ввода: ' + ${a.entryYear}"</p>
+                    <p class="sortrule" th:case="'attendance'"
+                       th:text="'Посещаемость: ' + ${#numbers.formatDecimal(a.attendance, 0, 'WHITESPACE', 0, 'POINT')} + ' чел.'"</p>
+                    <p class="sortrule" th:case="'fillpercentage'"
+                       th:text="'Заполняемость: ' + ${a.fillPercentage} + '%'"</p>
+                    <p class="sortrule" th:case="'revenue'"
+                       th:text="'Доходность: ' + ${#numbers.formatDecimal(a.revenue, 0, 'WHITESPACE', 0, 'POINT')} + ' руб.'"</p>
+                    <p class="sortrule" th:case="'service'" th:text="'Услуги: ' + ${a.activitiesId}"</p>
+                </div>
+
                 <a th:href="@{../../arena/{id}(id=${a.id})}" class="button">Смотреть</a>
             </div>
         </div>

@@ -6,10 +6,7 @@ import org.springframework.stereotype.Service;
 import romanyukalexandr84.KHL_Arenas_Project.Aspect.TrackUserAction;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 //сервис пользователя - методы бизнес-логики для пользователя
 @Service
@@ -47,6 +44,35 @@ public class UserService {
         return Arrays.asList(arenasRepo.findActivityByArenaId(id).replaceAll(", ", "/").split("/"));
     }
 
+    //Получение арен, отсортированных по вместимости
+    @TrackUserAction
+    public List<Arena> getArenasSortedByCapacity() {
+        return arenasRepo.findAll(Sort.by(Sort.Order.desc("capacity")));
+    }
+
+    //Получение арен, отсортированных по новизне
+    @TrackUserAction
+    public List<Arena> getArenasSortedByEntryYear() {
+        return arenasRepo.findAll(Sort.by(Sort.Order.desc("entryYear")));
+    }
+
+    //Получение арен, отсортированных по посещаемости
+    @TrackUserAction
+    public List<Arena> getArenasSortedByAttendance() {
+        return arenasRepo.findAll(Sort.by(Sort.Order.desc("attendance")));
+    }
+
+    //Получение арен, отсортированных по заполняемости
+    @TrackUserAction
+    public List<Arena> getArenasSortedByFillPercentage() {
+        return arenasRepo.findAll(Sort.by(Sort.Order.desc("fillPercentage")));
+    }
+
+    //Получение арен, отсортированных по доходности
+    @TrackUserAction
+    public List<Arena> getArenasSortedByRevenue() {
+        return arenasRepo.findAll(Sort.by(Sort.Order.desc("revenue")));
+    }
 
 
 }

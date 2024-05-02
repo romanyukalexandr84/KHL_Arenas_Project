@@ -11,50 +11,9 @@ import romanyukalexandr84.KHL_Arenas_Project.Service.UserService;
 
 @org.springframework.stereotype.Controller
 @AllArgsConstructor
-public class Controller {
-    //в контролер внедряем зависимости - сервисы пользователя и администратора
-    private final UserService userService;
+public class AdminController {
+    //в контролер внедряем зависимость - сервис администратора
     private final AdminService adminService;
-
-    //по умолчанию отдаем приветственную страницу
-    @GetMapping("/")
-    public String getViewAsGuest() {
-        return "welcome";
-    }
-
-    //отдаем страницу авторизации
-    @GetMapping("/login")
-    public String login() {
-        return "login";
-    }
-
-    //отдаем страницу пользователя
-    @GetMapping("/user-profile")
-    public String getViewAsCommonUser(Model model) {
-        model.addAttribute("arenas", userService.getAllArenas());
-        return "user-profile";
-    }
-
-    //отдаем карточку арены по id
-    @GetMapping("/arena/{id}")
-    public String getSingleArena(Model model, @PathVariable Integer id) {
-        model.addAttribute("arena", userService.getArenaById(id));
-        model.addAttribute("club", userService.getClubNameByArenaId(id));
-        model.addAttribute("city", userService.getCityNameByArenaId(id));
-        model.addAttribute("activities", userService.getActivitiesByArenaId(id));
-        return "arena";
-    }
-
-    //отдаем галерею арены по id
-    @GetMapping("/arena/{id}/gallery")
-    public String getArenaGallery(Model model, @PathVariable Integer id) {
-        model.addAttribute("arena", userService.getArenaById(id));
-        return "gallery";
-    }
-
-
-
-
 
     //отдаем страницу администратора
     @GetMapping("/admin-profile")

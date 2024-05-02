@@ -8,13 +8,11 @@
 <body>
 
 <section class="all">
-
     <div th:each="i : ${#numbers.sequence(1, 10)}">
         <a target="_blank" th:href="@{${arena.galleryURL} + ${i} + '.jpg'}">
-        <img class="item" th:src="${arena.galleryURL} + ${i} + '.jpg'" alt="Изображение отсутствует"/>
+            <img class="item" th:src="${arena.galleryURL} + ${i} + '.jpg'" alt="Изображение отсутствует"/>
         </a>
     </div>
-
 </section>
 
 <div class="back">

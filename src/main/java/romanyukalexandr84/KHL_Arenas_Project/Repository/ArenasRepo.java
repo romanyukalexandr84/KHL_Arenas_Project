@@ -4,8 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 
-import java.util.List;
-
 public interface ArenasRepo extends JpaRepository<Arena, Integer> {
 
     @Query(value = "select clubs.name from clubs join arenas on arenas.club_id=clubs.id where arenas.id=:arenaId", nativeQuery = true)
@@ -16,5 +14,4 @@ public interface ArenasRepo extends JpaRepository<Arena, Integer> {
 
     @Query(value = "select activities.name from activities join arenas on arenas.activities_id=activities.id where arenas.id=:arenaId", nativeQuery = true)
     public String findActivityByArenaId(Integer arenaId);
-
 }
