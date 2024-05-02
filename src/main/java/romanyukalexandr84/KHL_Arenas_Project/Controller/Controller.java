@@ -45,6 +45,13 @@ public class Controller {
         return "arena";
     }
 
+    //отдаем галерею арены по id
+    @GetMapping("/arena/{id}/gallery")
+    public String getArenaGallery(Model model, @PathVariable Integer id) {
+        model.addAttribute("arena", userService.getArenaById(id));
+        return "gallery";
+    }
+
 
 
 

@@ -1,0 +1,47 @@
+.all {
+   margin-top: 30px;
+   margin-left: 10px;
+   box-sizing: border-box;
+   display: grid;
+   gap: 28px;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.button {
+   width: 100px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 22px;
+   background: green;
+   color: white;
+   text-transform: uppercase;
+   line-height: 45px;
+   border-radius: 40px;
+   margin-top: 30px;
+   margin-bottom: 38px;
+}
+
+.button:hover {
+   background: #fc5a5a;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    background: skyblue;
+}

@@ -7,23 +7,55 @@
 </head>
 <body>
 
-<h1 class="center">Характеристики объекта</h1>
+<section class="card">
+    <div class="chars1">
+<h1 class="center" th:text="${arena.name}"></h1>
 
 <div class="info">
     <div class="item">
-        <img th:src="${arena.galleryURL} + '1.jpg'" alt="Изображение отсутствует"/>
+        <img th:src="${arena.galleryURL} + '2.jpg'" alt="Изображение отсутствует"/>
         <div class="item-info">
 
-            <h3 th:text="${arena.name}"></h3>
-            <p class="properties" th:text="${club}"></p>
-            <p class="properties" th:text="${arena.capacity}"></p>
-            <p class="properties" th:text="${arena.entryYear}"></p>
-            <p class="properties" th:text="${arena.galleryURL}"></p>
+            <h3>Характеристики</h3>
+            <div class="propitems">
 
-            <a href="javascript:history.back()" class="button">Вернуться</a>
+                <div>
+                    <p class="properties1" th:text="'Клуб: ' + ${club}"></p>
+                    <p class="properties1" th:text="'Город: ' + ${city}"></p>
+                    <p class="properties1" th:text="'Вместимость (чел): ' + ${arena.capacity}"></p>
+                    <p class="properties1" th:text="'Год ввода: ' + ${arena.entryYear}"></p>
+                </div>
+
+                <div>
+                    <p class="properties2" th:text="'Средняя посещаемость (чел): ' + ${arena.attendance}"></p>
+                    <p class="properties2" th:text="'Процент заполняемости: ' + ${arena.fillPercentage}"></p>
+                    <p class="properties2" th:text="'Цена билетов (руб): ' + ${arena.prices}"></p>
+                    <p class="properties2" th:text="'Доходность за 1 матч, руб: ' + ${#numbers.formatDecimal(arena.revenue, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
+    </div>
+
+    <div class="chars2">
+        <h1 class="serv">Дополнительные услуги</h1>
+        <tr th:each="act: ${activities}">
+                    <h3 class="act" th:text="' - ' + ${act}"></h3>
+        </tr>
+
+        <a th:href="@{../../arena/{id}(id=${arena.id})} + '/gallery'" class="button1">Смотреть галерею</a>
+        <br>
+
+        <a th:href="${arena.ticketsURL}" class="button2">Купить билеты</a>
+        <br>
+
+        <a href="javascript:history.back()" class="button3">Назад</a>
+    </div>
+
+</section>
 
 </body>
 </html>

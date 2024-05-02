@@ -89,7 +89,7 @@ INSERT INTO arenas (name , club_id, city_id, capacity , entry_year , tickets_url
 ('Татнефть Арена', 11, 9, 8900, 2005, 'https://www.ak-bars.ru/tickets', 7028, '350-2350', 11),
 ('Платинум Арена', 12, 10, 7100, 2003, 'https://tickets.hcamur.ru', 6575, '350-2500', 12),
 ('Нефтехим Арена', 13, 11, 5500, 2005, 'https://tickets.hcnh.ru', 3217, '400-700', 13),
-('Фетисов Арена', 14, 13, 5915, 2013, 'http://tickets.hcadmiral.ru', 4411, '575-2350', 14),
+('Фетисов Арена', 14, 12, 5915, 2013, 'http://tickets.hcadmiral.ru', 4411, '575-2350', 14),
 ('Барыс Арена', 15, 13, 12000, 2015, 'https://ru.hcbarys.kz/tickets', 5877, '250-1200', 15),
 ('Уфа-Арена', 16, 14, 8522, 2007, 'https://tickets.hcsalavat.ru/ru', 7620, '400-1700', 16),
 ('Сибирь-Арена', 17, 15, 10587, 2023, 'https://tickets.hcsibir.ru', 10224, '390-3000', 17),
