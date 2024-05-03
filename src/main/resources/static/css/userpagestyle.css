@@ -56,7 +56,7 @@
    text-decoration: none;
    display: inline-block;
    padding: 0 12px;
-   background: green;
+   background: linear-gradient(45deg, black, transparent);
    color: white;
    text-transform: uppercase;
    font-size: 12px;
@@ -76,7 +76,7 @@
    margin-left: 10px;
    display: inline-block;
    padding: 0 12px;
-   background: green;
+   background: linear-gradient(45deg, black, transparent);
    color: white;
    text-transform: uppercase;
    font-size: 12px;
@@ -87,6 +87,7 @@
 
 .out:hover {
    background: red;
+   cursor: pointer;
 }
 
 .item:hover .button {
@@ -98,6 +99,7 @@
 }
 
 .content {
+   margin-top: 20px;
    box-sizing: border-box;
    display: grid;
    gap: 18px;
@@ -155,7 +157,7 @@
 .sortchoice {
     display: inline-block;
     text-align: center;
-    width: 160px;
+    width: 180px;
     line-height: 27px;
     border-radius: 40px;
     background: darkgrey;
@@ -166,6 +168,36 @@
     margin-left: 25px;
 }
 
+.selection {
+    display: inline-block;
+}
+
+.compare {
+    margin-left: 25px;
+    height: 25px;
+}
+
+.choice {
+    height: 25px;
+    margin-left: 12px;
+    background: floralwhite;
+}
+
+.sub {
+    text-transform: uppercase;
+    width: 120px;
+    height: 25px;
+    background: linear-gradient(45deg, black, transparent);
+    margin-left: 10px;
+    color: white;
+    border: none;
+}
+
+.sub:hover {
+   background: red;
+   cursor: pointer;
+}
+
 html {
-    background: lavender;
+    background: radial-gradient(black, transparent);
 }

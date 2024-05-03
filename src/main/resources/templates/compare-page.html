@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Инфо</title>
+    <link th:href="@{/css/comparestyle.css}" rel="stylesheet">
+</head>
+<body>
+
+<section>
+    <div class="card">
+        <div class="chars1">
+            <h1 class="center" th:text="${arena1.name}"></h1>
+            <div class="info">
+                <div class="item">
+                    <img th:src="${arena1.galleryURL} + '1.jpg'" alt="Изображение отсутствует"/>
+                    <div class="item-info">
+                        <div class="propitems">
+                            <div>
+                                <p class="properties1"
+                                   th:text="${#numbers.formatDecimal(arena1.capacity, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                                <p class="properties1" th:text="${arena1.entryYear}"></p>
+                                <p class="properties1"
+                                   th:text="${#numbers.formatDecimal(arena1.attendance, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                                <p class="properties1"
+                                   th:text="${arena1.fillPercentage}"></p>
+                                <p class="properties1" th:text="${arena1.prices}"></p>
+                                <p class="properties1"
+                                   th:text="${#numbers.formatDecimal(arena1.revenue, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cardcent">
+        <div class="chars1">
+            <div class="info">
+                <div class="item">
+                    <div class="item-info">
+                        <div class="propitems">
+                            <div>
+                                <p class="properties4"
+                                   th:text="'Вместимость (чел)'"></p>
+                                <p class="properties3" th:text="'Год ввода'"></p>
+                                <p class="properties3"
+                                   th:text="'Средняя посещаемость (чел)'"></p>
+                                <p class="properties3"
+                                   th:text="'Процент заполняемости'"></p>
+                                <p class="properties3" th:text="'Цена билетов (руб)'"></p>
+                                <p class="properties3"
+                                   th:text="'Доходность за 1 матч, руб'"></p>
+                                <a href="javascript:history.back()" class="button3">Назад</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="chars1">
+            <h1 class="center" th:text="${arena2.name}"></h1>
+            <div class="info">
+                <div class="item">
+                    <img th:src="${arena2.galleryURL} + '1.jpg'" alt="Изображение отсутствует"/>
+                    <div class="item-info">
+                        <div class="propitems">
+                            <div>
+                                <p class="properties2"
+                                   th:text="${#numbers.formatDecimal(arena2.capacity, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                                <p class="properties2" th:text="${arena2.entryYear}"></p>
+                                <p class="properties2"
+                                   th:text="${#numbers.formatDecimal(arena2.attendance, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                                <p class="properties2"
+                                   th:text="${arena2.fillPercentage}"></p>
+                                <p class="properties2" th:text="${arena2.prices}"></p>
+                                <p class="properties2"
+                                   th:text="${#numbers.formatDecimal(arena2.revenue, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>

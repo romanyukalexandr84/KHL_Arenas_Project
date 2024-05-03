@@ -10,11 +10,11 @@
 <h1 class="center">КОНТИНЕНТАЛЬНАЯ ХОККЕЙНАЯ ЛИГА</h1>
 
 <div class="header">
-    <div class="itfirst"><img class="itfirst" th:src="@{/css/logo.png}" alt="Лого"/></div>
-    <div class="it"><img class="flag" th:src="@{/css/russia.jpg}" alt="Флаг"/></div>
-    <div class="it"><img class="flag" th:src="@{/css/belarus.jpg}" alt="Флаг"/></div>
-    <div class="it"><img class="flag" th:src="@{/css/kazakhstan.jpg}" alt="Флаг"/></div>
-    <div class="it"><img class="flag" th:src="@{/css/china.jpg}" alt="Флаг"/></div>
+    <div class="itfirst"><img class="itfirst" th:src="@{/img/logo.png}" alt="Лого"/></div>
+    <div class="it"><img class="flag" th:src="@{/img/russia.jpg}" alt="Флаг"/></div>
+    <div class="it"><img class="flag" th:src="@{/img/belarus.jpg}" alt="Флаг"/></div>
+    <div class="it"><img class="flag" th:src="@{/img/kazakhstan.jpg}" alt="Флаг"/></div>
+    <div class="it"><img class="flag" th:src="@{/img/china.jpg}" alt="Флаг"/></div>
 </div>
 
 <h1 class="center">ВСЕ АРЕНЫ:</h1>
@@ -34,6 +34,32 @@
     <a href="../../user-profile/sortedbyfillpercentage" class="button2">заполняемости</a>&nbsp;&nbsp;&nbsp;
     <a href="../../user-profile/sortedbyrevenue" class="button2">доходности</a>&nbsp;&nbsp;&nbsp;
     <a href="../../user-profile" class="button2">сброс</a>
+</div>
+
+<div class="compare">
+    <span class="sortchoice" th:style="'font-weight: bold;'" th:text="Сравнение + ':'"></span>&nbsp;
+
+        <form class="selection" action="/compare" method="get">
+            <p>
+
+                <select class="choice" name="choice1" width=300 style="width: 350px">
+                    <option value="">-- Выберите первую арену --</option>
+                    <tr th:each="a: ${arenas}">
+                        <option th:value="${a.id}" th:text="${a.name}"</option>
+                    </tr>
+                </select>
+
+                <select class="choice" name="choice2" width=300 style="width: 350px">
+                    <option value="">-- Выберите вторую арену --</option>
+                    <tr th:each="a: ${arenas}">
+                        <option th:value="${a.id}" th:text="${a.name}"</option>
+                    </tr>
+                </select>
+
+                    <input class="sub" type="submit" value="Сравнить">
+            </p>
+        </form>
+
 </div>
 
 <div class="content">

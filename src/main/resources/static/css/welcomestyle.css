@@ -29,9 +29,10 @@ h2 {
 .authbutton:hover {
     color: black;
     background-color: brown;
+    cursor: pointer;
 }
 
 html {
-    background: url(/css/welcomepage.jpg) no-repeat center center fixed;
+    background: url(https://raw.githubusercontent.com/romanyukalexandr84/Images/main/welcomepage.jpg) no-repeat center center fixed;
     background-size: cover;
 }

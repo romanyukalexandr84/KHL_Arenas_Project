@@ -25,7 +25,7 @@ section {
   gap: 2px;
   flex-wrap: wrap;
   overflow: hidden;
-  background: url("/css/loginview.jpg") no-repeat center center fixed;
+  background: url(https://raw.githubusercontent.com/romanyukalexandr84/Images/main/loginview.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -33,7 +33,7 @@ section .signin {
   position: absolute;
   width: 485px;
   height: 560px;
-  background: url("/css/ice.jpg") no-repeat center center fixed;
+  background: url(https://raw.githubusercontent.com/romanyukalexandr84/Images/main/ice.jpg) no-repeat center center fixed;
   background-size: cover;
   z-index: 1000;
   display: flex;

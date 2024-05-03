@@ -5,6 +5,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import romanyukalexandr84.KHL_Arenas_Project.Service.UserService;
 
 @org.springframework.stereotype.Controller
@@ -95,5 +96,18 @@ public class UserController {
         return "user-profile";
     }
 
+    //отдаем страницу сравнения арен по двум id
+    @GetMapping("/compare")
+    public String getArenaGallery(Model model, @RequestParam(name = "choice1") Integer id1, @RequestParam(name = "choice2") Integer id2) {
+        model.addAttribute("arena1", userService.getArenaById(id1));
+        model.addAttribute("club1", userService.getClubNameByArenaId(id1));
+        model.addAttribute("city1", userService.getCityNameByArenaId(id1));
+        model.addAttribute("activities1", userService.getActivitiesByArenaId(id1));
+        model.addAttribute("arena2", userService.getArenaById(id2));
+        model.addAttribute("club2", userService.getClubNameByArenaId(id2));
+        model.addAttribute("city2", userService.getCityNameByArenaId(id2));
+        model.addAttribute("activities2", userService.getActivitiesByArenaId(id2));
+        return "compare-page";
+    }
 
 }
