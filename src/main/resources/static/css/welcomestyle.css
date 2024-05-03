@@ -33,6 +33,6 @@ h2 {
 }
 
 html {
-    background: url(https://raw.githubusercontent.com/romanyukalexandr84/Images/main/welcomepage.jpg) no-repeat center center fixed;
+    background: url(/css/background/welcomepage.jpg) no-repeat center center fixed;
     background-size: cover;
 }

@@ -5,7 +5,10 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import romanyukalexandr84.KHL_Arenas_Project.Aspect.TrackUserAction;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
+import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
+import romanyukalexandr84.KHL_Arenas_Project.Repository.MessagesRepo;
+
 import java.util.*;
 
 //сервис пользователя - методы бизнес-логики для пользователя
@@ -13,6 +16,7 @@ import java.util.*;
 @AllArgsConstructor
 public class UserService {
     private final ArenasRepo arenasRepo;
+    private final MessagesRepo messagesRepo;
 
     //Просмотр всех арен
     @TrackUserAction
@@ -74,5 +78,10 @@ public class UserService {
         return arenasRepo.findAll(Sort.by(Sort.Order.desc("revenue")));
     }
 
+    //Отправка сообщения в техподдержку
+    @TrackUserAction
+    public void saveMessage(Message msg) {
+        messagesRepo.save(msg);
+    }
 
 }

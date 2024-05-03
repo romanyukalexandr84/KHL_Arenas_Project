@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Написать</title>
+    <link th:href="@{/css/sendingstyle.css}" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper centered">
+    <article class="letter">
+        <div class="side">
+
+            <form action="/user-profile" method="post">
+                <h2>Сообщение в техподдержку</h2>
+
+                Пользователь: <input class="inp" required type="text" name="fromUser" th:value="${username}" readonly>
+                <br/>
+                Сообщение: <input class="inp" required type="text" name="body"><br/>
+
+                <button class="enter" id="sendLetter" type="submit">Отправить</button>
+            </form>
+
+        </div>
+    </article>
+</div>
+
+</body>
+</html>

@@ -5,7 +5,9 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Service.UserService;
 
 @org.springframework.stereotype.Controller
@@ -109,5 +111,23 @@ public class UserController {
         model.addAttribute("activities2", userService.getActivitiesByArenaId(id2));
         return "compare-page";
     }
+
+    //отдаем страницу для отправки сообщений в техподдержку
+    @GetMapping("/user-profile/sendmessage")
+    public String sendMessage(Model model) {
+        model.addAttribute("username", SecurityContextHolder.getContext().getAuthentication().getName());
+        return "sendingmsg";
+    }
+
+    //отдаем обновленную страницу пользователя после отправки сообщения
+    @PostMapping("/user-profile")
+    public String sendMessage(Message message, Model model) {
+        userService.saveMessage(message);
+        model.addAttribute("arenas", userService.getAllArenas());
+        model.addAttribute("username", SecurityContextHolder.getContext().getAuthentication().getName());
+        return "redirect:/user-profile";
+    }
+
+
 
 }

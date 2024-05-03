@@ -29,3 +29,9 @@ CREATE TABLE IF NOT EXISTS arenas (
     ((split_part(prices, '-', 1)::INT + split_part(prices, '-', 2)::INT) / 2 * attendance) STORED,
     activities_id INT REFERENCES activities (id)
     );
+
+CREATE TABLE IF NOT EXISTS messages (
+    id SERIAL PRIMARY KEY,
+    from_user VARCHAR (32) NOT NULL,
+    body VARCHAR (256) NOT NULL
+    );

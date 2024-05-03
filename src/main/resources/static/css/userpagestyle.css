@@ -15,6 +15,8 @@
 
 .item:hover {
    border-bottom: 2px solid #fc5a5a;
+   transform: scale(1.03);
+   transition-delay: 100ms;
 }
 
 .item img {
@@ -66,7 +68,29 @@
 }
 
 .button2:hover {
-   background: red;
+   background: lightgreen;
+   color: black;
+}
+
+.button3 {
+   width: 120px;
+   text-align: center;
+   margin-left: 22px;
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 12px;
+   background: linear-gradient(45deg, black, transparent);
+   color: white;
+   text-transform: uppercase;
+   font-size: 12px;
+   line-height: 28px;
+   border-radius: 40px;
+   font-family: sans-serif;
+}
+
+.button3:hover {
+   background: lightgreen;
+   color: black;
 }
 
 .out {
@@ -86,16 +110,17 @@
 }
 
 .out:hover {
-   background: red;
+   background: lightgreen;
    cursor: pointer;
+   color: black;
 }
 
 .item:hover .button {
-   background: #fc5a5a;
+   background: green;
 }
 
 .item:hover .button2 {
-   background: #fc5a5a;
+   background: green;
 }
 
 .content {
@@ -194,8 +219,9 @@
 }
 
 .sub:hover {
-   background: red;
+   background: lightgreen;
    cursor: pointer;
+   color: black;
 }
 
 html {
