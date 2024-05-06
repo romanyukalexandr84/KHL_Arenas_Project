@@ -4,7 +4,9 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import romanyukalexandr84.KHL_Arenas_Project.Aspect.TrackUserAction;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
+import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
+import romanyukalexandr84.KHL_Arenas_Project.Repository.MessagesRepo;
 
 import java.util.List;
 
@@ -12,7 +14,27 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class AdminService {
+    //в сервис внедряем зависимости - репозитории арен и сообщений
     private final ArenasRepo arenasRepo;
+    private final MessagesRepo messagesRepo;
+
+    //Просмотр всех сообщений от пользователей
+    @TrackUserAction
+    public List<Message> getAllMessages() {
+        return messagesRepo.findAll();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     //Просмотр всех арен
     @TrackUserAction

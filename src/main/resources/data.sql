@@ -74,6 +74,14 @@ INSERT INTO activities (name) VALUES
 ('Каток, Аренда льда, Фотосессии') ON CONFLICT DO NOTHING
 ;
 
+INSERT INTO messages (from_user, body) VALUES
+('user1', 'Тестовое сообщение'),
+('user3', 'Всё работает'),
+('user2', 'Привет'),
+('user1', 'Как быстро техподдержка ответит на вопрос?'),
+('user3', 'Прошу дать права админа') ON CONFLICT DO NOTHING
+;
+
 INSERT INTO arenas (name , club_id, city_id, capacity , entry_year , tickets_url,
     attendance, prices, activities_id) VALUES
 ('Арена 2000', 1, 1, 8905, 2001, 'https://tickets.hclokomotiv.ru', 6623, '250-1000', 1),

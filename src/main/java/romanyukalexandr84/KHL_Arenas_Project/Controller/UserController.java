@@ -101,7 +101,7 @@ public class UserController {
 
     //отдаем страницу сравнения арен по двум id
     @GetMapping("/compare")
-    public String getArenaGallery(Model model, @RequestParam(name = "choice1") Integer id1, @RequestParam(name = "choice2") Integer id2) {
+    public String getArenasCompare(Model model, @RequestParam(name = "choice1") Integer id1, @RequestParam(name = "choice2") Integer id2) {
         model.addAttribute("arena1", userService.getArenaById(id1));
         model.addAttribute("club1", userService.getClubNameByArenaId(id1));
         model.addAttribute("city1", userService.getCityNameByArenaId(id1));
@@ -122,7 +122,7 @@ public class UserController {
 
     //отдаем обновленную страницу пользователя после отправки сообщения
     @PostMapping("/user-profile")
-    public String sendMessage(Message message, Model model) {
+    public String getViewAfterSendingMsg(Message message, Model model) {
         userService.saveMessage(message);
         model.addAttribute("arenas", userService.getAllArenas());
         model.addAttribute("username", SecurityContextHolder.getContext().getAuthentication().getName());

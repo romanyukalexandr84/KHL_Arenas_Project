@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Сообщения</title>
+    <link th:href="@{/css/msgstyle.css}" rel="stylesheet">
+</head>
+<body class="bod">
+
+<div class="panel">
+    <h2>ВСЕ СООБЩЕНИЯ:</h2>
+
+    <div class="scroll-table">
+        <table class="tab">
+            <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Отправитель</th>
+                <th>Текст</th>
+            </tr>
+            </thead>
+        </table>
+
+        <div class="scroll-table-body">
+            <table class="tab">
+                <tbody>
+                <tr th:each="m: ${messages}">
+                    <td class="cent" th:text="${m.id}"></td>
+                    <td class="cent" th:text="${m.fromUser}"></td>
+                    <td th:text="${m.body}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="javascript:history.back()" class="button">Назад</a>
+    </div>
+
+</div>
+
+</body>
+</html>

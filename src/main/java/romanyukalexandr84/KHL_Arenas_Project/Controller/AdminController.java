@@ -22,6 +22,13 @@ public class AdminController {
         return "admin-profile";
     }
 
+    //отдаем страницу с сообщениями от пользователей
+    @GetMapping("/admin-profile/allmessages")
+    public String getMessagesPage(Model model) {
+        model.addAttribute("messages", adminService.getAllMessages());
+        return "allmessages";
+    }
+
 
 
 
