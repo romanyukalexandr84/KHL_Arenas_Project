@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 
+//интерфейс репозиторий - для операций с таблицей арены в базе данных
 public interface ArenasRepo extends JpaRepository<Arena, Integer> {
 
     @Query(value = "select clubs.name from clubs join arenas on arenas.club_id=clubs.id where arenas.id=:arenaId", nativeQuery = true)

@@ -1,14 +1,15 @@
 package romanyukalexandr84.KHL_Arenas_Project.Controller;
 
 import lombok.AllArgsConstructor;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Service.AdminService;
-import romanyukalexandr84.KHL_Arenas_Project.Service.UserService;
 
+//класс контролер администратора - обрабатывает входящие запросы на сервер от админа
 @org.springframework.stereotype.Controller
 @AllArgsConstructor
 public class AdminController {
@@ -18,9 +19,14 @@ public class AdminController {
     //отдаем страницу администратора
     @GetMapping("/admin-profile")
     public String getViewAsAdmin(Model model) {
-        model.addAttribute("books", adminService.getAllArenas());
         return "admin-profile";
     }
+
+
+
+
+
+
 
     //отдаем обновленную страницу администратора после добавления новой арены
     @PostMapping("/admin-profile")

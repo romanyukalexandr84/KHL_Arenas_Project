@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Service.UserService;
 
+//класс контролер пользователя - обрабатывает входящие запросы на сервер от обычных пользователей
 @org.springframework.stereotype.Controller
 @AllArgsConstructor
 public class UserController {

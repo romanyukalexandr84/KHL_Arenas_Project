@@ -15,6 +15,7 @@ import java.util.*;
 @Service
 @AllArgsConstructor
 public class UserService {
+    //в сервис внедряем зависимости - репозитории арен и сообщений
     private final ArenasRepo arenasRepo;
     private final MessagesRepo messagesRepo;
 

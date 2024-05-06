@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель администратора</title>
+    <link th:href="@{/css/admpagestyle.css}" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="panel">
+    <ul>
+        <p>Панель администратора</p>
+        <li><a href="#">посмотреть лог</a></li>
+        <li><a href="#">прочитать сообщения</a></li>
+        <li><a href="#">добавить объект</a></li>
+        <li><a href="#">удалить объект</a></li>
+        <li><a href="#">изменить данные</a></li>
+        <li>
+            <form th:action="@{/logout}" method="post" style="display: inline;">
+            <button class="out" type="submit">Выйти</button>
+        </form>
+        </li>
+    </ul>
+</div>
+
+
+</body>
+</html>
