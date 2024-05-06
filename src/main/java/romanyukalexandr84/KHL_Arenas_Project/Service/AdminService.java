@@ -8,7 +8,11 @@ import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.MessagesRepo;
 
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
+
+import static java.lang.System.out;
 
 //сервис администратора - методы бизнес-логики для администратора
 @Service
@@ -24,9 +28,27 @@ public class AdminService {
         return messagesRepo.findAll();
     }
 
+    //Просмотр лога приложения
+    @TrackUserAction
+    public List<String> getLog() throws IOException {
+        File file = new File("src/main/java/romanyukalexandr84/KHL_Arenas_Project/Log/app-log.log");
+        return readFile(file);
+    }
 
-
-
+    //Метод чтения файла (для лога)
+    public static List<String> readFile(File file) {
+        List<String> lst = new ArrayList<>();
+        try (FileReader fr = new FileReader(file); BufferedReader bf = new BufferedReader(fr)) {
+            String line;
+            while ((line = bf.readLine()) != null) {
+                lst.add(line);
+            }
+        } catch (IOException e) {
+            lst.add("Файл не существует");
+            return lst;
+        }
+        return lst;
+    }
 
 
 

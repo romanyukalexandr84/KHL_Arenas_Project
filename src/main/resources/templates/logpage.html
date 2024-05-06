@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Лог</title>
+    <link th:href="@{/css/logpagestyle.css}" rel="stylesheet">
+</head>
+<body>
+
+<h2>ЛОГ ПРИЛОЖЕНИЯ</h2>
+<div class="paper">
+    <div class="paper-content">
+        <tr th:each="l: ${log}">
+            <td class="cent" th:text="${l}"></td>
+            <br>
+            <br>
+        </tr>
+    </div>
+</div>
+
+<footer>
+    <a href="javascript:history.back()" class="button">Назад</a>
+</footer>
+
+</body>
+</html>

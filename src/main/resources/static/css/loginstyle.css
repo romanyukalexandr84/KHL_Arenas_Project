@@ -87,8 +87,8 @@ section .signin .content .form .inputBox input {
 
 .signin .content .form .inputBox input[type="submit"] {
   padding: 10px;
-  background: #0f0;
-  color: black;
+  background: radial-gradient(black, transparent);;
+  color: white;
   background-color: silver;
   border: 1px solid black;
   font-weight: 600;
@@ -103,7 +103,7 @@ input[type="submit"]:active {
 
 .signin .content .form .inputBox input[type="submit"]:hover {
   color: white;
-  background-color: green;
+  background-color: lightcyan;
   border: 1px solid black;
 }
 

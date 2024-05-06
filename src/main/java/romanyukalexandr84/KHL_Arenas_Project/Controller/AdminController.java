@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Service.AdminService;
 
+import java.io.IOException;
+
 //класс контролер администратора - обрабатывает входящие запросы на сервер от админа
 @org.springframework.stereotype.Controller
 @AllArgsConstructor
@@ -27,6 +29,13 @@ public class AdminController {
     public String getMessagesPage(Model model) {
         model.addAttribute("messages", adminService.getAllMessages());
         return "allmessages";
+    }
+
+    //отдаем страницу с логом приложения
+    @GetMapping("/admin-profile/logpage")
+    public String getLog(Model model) throws IOException {
+        model.addAttribute("log", adminService.getLog());
+        return "logpage";
     }
 
 

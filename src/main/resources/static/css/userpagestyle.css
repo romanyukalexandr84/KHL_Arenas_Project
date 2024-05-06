@@ -15,8 +15,8 @@
 
 .item:hover {
    border-bottom: 2px solid #fc5a5a;
-   transform: scale(1.03);
-   transition-delay: 100ms;
+   transform: scale(1.04);
+   transition-delay: 50ms;
 }
 
 .item img {
