@@ -1,7 +1,6 @@
 package romanyukalexandr84.KHL_Arenas_Project.Controller;
 
 import lombok.AllArgsConstructor;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -38,19 +37,27 @@ public class AdminController {
         return "logpage";
     }
 
-
-
-
-
-
-
-    //отдаем обновленную страницу администратора после добавления новой арены
-    @PostMapping("/admin-profile")
-    public String addArena(Arena arena, Model model) {
-        adminService.createArena(arena);
+    //отдаем страницу для добавления новой арены
+    @GetMapping("/admin-profile/adding")
+    public String addArena(Model model) {
         model.addAttribute("arenas", adminService.getAllArenas());
-        return "redirect:/admin-profile";
+        return "adding";
     }
+
+    //отдаем обновленную страницу после добавления новой арены
+    @PostMapping("/admin-profile/adding")
+    public String createArena(Arena arena) {
+        adminService.createArena(arena);
+        return "redirect:/admin-profile/adding";
+    }
+
+
+
+
+
+
+
+
 
     //отдаем обновленную страницу администратора после удаления арены
     @GetMapping("arena-del/{id}")

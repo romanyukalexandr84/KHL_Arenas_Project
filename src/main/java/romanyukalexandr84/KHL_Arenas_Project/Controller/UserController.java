@@ -128,7 +128,4 @@ public class UserController {
         model.addAttribute("username", SecurityContextHolder.getContext().getAuthentication().getName());
         return "redirect:/user-profile";
     }
-
-
-
 }

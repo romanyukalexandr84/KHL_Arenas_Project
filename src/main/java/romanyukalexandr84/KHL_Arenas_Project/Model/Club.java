@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "clubs")
 public class Club {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
     @Column(nullable = false)

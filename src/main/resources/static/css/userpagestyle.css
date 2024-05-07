@@ -68,8 +68,7 @@
 }
 
 .button2:hover {
-   background: lightgreen;
-   color: black;
+   background: mediumpurple;
 }
 
 .button3 {
@@ -89,8 +88,7 @@
 }
 
 .button3:hover {
-   background: lightgreen;
-   color: black;
+   background: mediumpurple;
 }
 
 .out {
@@ -110,9 +108,8 @@
 }
 
 .out:hover {
-   background: lightgreen;
+   background: mediumpurple;
    cursor: pointer;
-   color: black;
 }
 
 .item:hover .button {
@@ -203,6 +200,7 @@
 }
 
 .choice {
+    font-size: 15px;
     height: 25px;
     margin-left: 12px;
     background: floralwhite;
@@ -219,9 +217,8 @@
 }
 
 .sub:hover {
-   background: lightgreen;
+   background: mediumpurple;
    cursor: pointer;
-   color: black;
 }
 
 html {

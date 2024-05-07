@@ -12,8 +12,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.System.out;
-
 //сервис администратора - методы бизнес-логики для администратора
 @Service
 @AllArgsConstructor
@@ -25,14 +23,14 @@ public class AdminService {
     //Просмотр всех сообщений от пользователей
     @TrackUserAction
     public List<Message> getAllMessages() {
-        return messagesRepo.findAll();
+        return messagesRepo.findAll().reversed();
     }
 
     //Просмотр лога приложения
     @TrackUserAction
     public List<String> getLog() throws IOException {
         File file = new File("src/main/java/romanyukalexandr84/KHL_Arenas_Project/Log/app-log.log");
-        return readFile(file);
+        return readFile(file).reversed();
     }
 
     //Метод чтения файла (для лога)
@@ -50,30 +48,30 @@ public class AdminService {
         return lst;
     }
 
-
-
-
-
-
-
-
-
     //Просмотр всех арен
     @TrackUserAction
     public List<Arena> getAllArenas() {
         return arenasRepo.findAll();
     }
 
+    //Добавление арены
+    @TrackUserAction
+    public void createArena(Arena arena) {
+        arenasRepo.add(arena.getName(), arena.getClubId(), arena.getCityId(), arena.getCapacity(),
+                arena.getEntryYear(), arena.getTicketsURL(), arena.getAttendance(), arena.getPrices(), arena.getActivitiesId());
+    }
+
+
+
+
+
+
+
+
     //Получение арены по id
     @TrackUserAction
     public Arena getArenaById(Integer id) {
         return arenasRepo.findById(id).orElse(null);
-    }
-
-    //Добавление арены
-    @TrackUserAction
-    public Arena createArena(Arena arena) {
-        return arenasRepo.save(arena);
     }
 
     //Удаление арены

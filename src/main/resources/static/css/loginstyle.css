@@ -82,7 +82,7 @@ section .signin .content .form .inputBox input {
   border-radius: 4px;
   color: #fff;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 18px;
 }
 
 .signin .content .form .inputBox input[type="submit"] {
@@ -112,5 +112,5 @@ input[type="submit"]:active {
 }
 
 .ic {
-    margin-top: 10px;
+    margin-top: 20px;
 }
