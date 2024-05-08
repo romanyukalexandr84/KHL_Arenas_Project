@@ -51,19 +51,23 @@ public class AdminController {
         return "redirect:/admin-profile/adding";
     }
 
-
-
-
-
-
-
-
-
-    //отдаем обновленную страницу администратора после удаления арены
-    @GetMapping("arena-del/{id}")
-    public String delArena(@PathVariable("id") Integer id) {
-        adminService.delArena(id);
-        return "redirect:/admin-profile";
+    //отдаем страницу для удаления арены
+    @GetMapping("/admin-profile/deleting")
+    public String delArena(Model model) {
+        model.addAttribute("arenas", adminService.getAllArenas());
+        return "deleting";
     }
+
+    //отдаем обновленную страницу после удаления арены
+    @PostMapping("/admin-profile/deleting")
+    public String dropArena(Integer arenaId) {
+        adminService.delArena(arenaId);
+        return "redirect:/admin-profile/deleting";
+    }
+
+
+
+
+
 
 }

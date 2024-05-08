@@ -61,6 +61,14 @@ public class AdminService {
                 arena.getEntryYear(), arena.getTicketsURL(), arena.getAttendance(), arena.getPrices(), arena.getActivitiesId());
     }
 
+    //Удаление арены
+    @TrackUserAction
+    public void delArena(Integer id) {
+        arenasRepo.deleteById(id);
+    }
+
+
+
 
 
 
@@ -74,9 +82,4 @@ public class AdminService {
         return arenasRepo.findById(id).orElse(null);
     }
 
-    //Удаление арены
-    @TrackUserAction
-    public void delArena(Integer id) {
-        arenasRepo.deleteById(id);
-    }
 }

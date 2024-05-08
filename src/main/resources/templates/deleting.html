@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Удаление</title>
+    <link th:href="@{/css/delstyle.css}" rel="stylesheet">
+</head>
+<body class="bod">
+
+<div class="main">
+    <div class="sect">
+
+        <div class="first">
+
+            <form action="/admin-profile/deleting" method="post">
+                <h3>ID арены <br> для удаления:</h3>
+                ID: <input class="inp" required type="number" step="any" name="arenaId"><br/>
+                <button class="enter" type="submit">Удалить</button>
+            </form>
+        </div>
+
+        <div>
+            <h3>Арены:</h3>
+            <table class="tab">
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                </tr>
+                <tr th:each="a: ${arenas}">
+                    <td class="ids" th:text="${a.id}"></td>
+                    <td class="name" th:text="${a.name}"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="back">
+    <a href="../admin-profile" class="button">Назад</a>
+</div>
+
+</body>
+</html>
