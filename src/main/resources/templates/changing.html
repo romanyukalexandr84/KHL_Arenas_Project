@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменение</title>
+    <link th:href="@{/css/changestyle.css}" rel="stylesheet">
+</head>
+<body class="bod">
+
+<div class="main">
+    <div class="sect">
+
+        <div>
+            <h3>Выбрать арену для изменения:</h3>
+            <table class="tab">
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                </tr>
+                <tr th:each="a: ${arenas}">
+                    <td class="ids" th:text="${a.id}"></td>
+                    <td><a th:href="@{../../admin-profile/changing/{id}(id=${a.id})}" th:text="'->  ' + ${a.name}"</a></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="back">
+    <a href="../admin-profile" class="button">Назад</a>
+</div>
+
+</body>
+</html>

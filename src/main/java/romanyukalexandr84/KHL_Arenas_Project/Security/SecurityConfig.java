@@ -48,8 +48,10 @@ public class SecurityConfig {
     //создаем пользователей, задаем им имена, пароли и роли для менеджера пользовательских данных
     @Bean
     UserDetailsManager inMemoryUserDetailsManager() {
-        var commonUser = User.withUsername("user").password("{noop}userpass").roles("USER").build();
+        var user1 = User.withUsername("user1").password("{noop}user1pass").roles("USER").build();
+        var user2 = User.withUsername("user2").password("{noop}user2pass").roles("USER").build();
+        var user3 = User.withUsername("user3").password("{noop}user3pass").roles("USER").build();
         var admin = User.withUsername("admin").password("{noop}adminpass").roles("ADMIN").build();
-        return new InMemoryUserDetailsManager(commonUser, admin);
+        return new InMemoryUserDetailsManager(user1, user2, user3, admin);
     }
 }

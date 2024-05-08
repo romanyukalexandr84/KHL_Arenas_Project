@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Инфо</title>
+    <title>Инфокарта</title>
     <link th:href="@{/css/cardstyle.css}" rel="stylesheet">
 </head>
 <body>
@@ -33,7 +33,7 @@
                             <p class="properties2" th:text="'Процент заполняемости: ' + ${arena.fillPercentage}"></p>
                             <p class="properties2" th:text="'Цена билетов (руб): ' + ${arena.prices}"></p>
                             <p class="properties2"
-                               th:text="'Доходность за 1 матч, руб: ' + ${#numbers.formatDecimal(arena.revenue, 0, 'WHITESPACE', 0, 'POINT')}"></p>
+                               th:text="'Доходность за 1 матч (руб): ' + ${#numbers.formatDecimal(arena.revenue, 0, 'WHITESPACE', 0, 'POINT')}"></p>
                         </div>
 
                     </div>

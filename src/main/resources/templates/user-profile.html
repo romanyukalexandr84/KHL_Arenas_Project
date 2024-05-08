@@ -76,11 +76,11 @@
                        th:text="'Вместимость: ' + ${#numbers.formatDecimal(a.capacity, 0, 'WHITESPACE', 0, 'POINT')} + ' чел.'"</p>
                     <p class="sortrule" th:case="'entryyear'" th:text="'Год ввода: ' + ${a.entryYear}"</p>
                     <p class="sortrule" th:case="'attendance'"
-                       th:text="'Посещаемость: ' + ${#numbers.formatDecimal(a.attendance, 0, 'WHITESPACE', 0, 'POINT')} + ' чел.'"</p>
+                       th:text="'Средняя посещаемость: ' + ${#numbers.formatDecimal(a.attendance, 0, 'WHITESPACE', 0, 'POINT')} + ' чел.'"</p>
                     <p class="sortrule" th:case="'fillpercentage'"
-                       th:text="'Заполняемость: ' + ${a.fillPercentage} + '%'"</p>
+                       th:text="'Средняя заполняемость: ' + ${a.fillPercentage} + '%'"</p>
                     <p class="sortrule" th:case="'revenue'"
-                       th:text="'Доходность: ' + ${#numbers.formatDecimal(a.revenue, 0, 'WHITESPACE', 0, 'POINT')} + ' руб.'"</p>
+                       th:text="'Доходность за 1 матч: ' + ${#numbers.formatDecimal(a.revenue, 0, 'WHITESPACE', 0, 'POINT')} + ' руб.'"</p>
                     <p class="sortrule" th:case="'service'" th:text="'Услуги: ' + ${a.activitiesId}"</p>
                 </div>
 

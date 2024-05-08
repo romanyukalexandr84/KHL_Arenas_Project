@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Обновление</title>
+    <link th:href="@{/css/updstyle.css}" rel="stylesheet">
+</head>
+<body class="bod">
+
+<div class="main">
+    <div class="sect">
+
+        <div class="first">
+
+            <form action="/admin-profile/changing" method="post">
+                <h3>Изменить данные арены:</h3>
+                Название: <input class="inp" required type="text" name="name"><br/>
+                ID клуба: <input class="inp" required type="number" step="any" name="clubId"><br/>
+                ID города: <input class="inp" required type="number" step="any" name="cityId"><br/>
+                Вместимость: <input class="inp" required type="number" step="any" name="capacity"><br/>
+                Год ввода: <input class="inp" required type="number" step="any" name="entryYear"><br/>
+                Покупка билетов: <input class="inp" required type="text" name="ticketsURL"><br/>
+                Посещаемость: <input class="inp" required type="number" step="any" name="attendance"><br/>
+                Цены(через дефис): <input class="inp" required type="text" name="prices"><br/>
+                ID услуг: <input class="inp" required type="number" step="any" name="activitiesId"><br/>
+
+                <button class="enter" type="submit">Изменить</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="back">
+    <a href="javascript:history.back()" class="button">Назад</a>
+</div>
+
+</body>
+</html>

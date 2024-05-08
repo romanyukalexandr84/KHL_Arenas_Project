@@ -19,7 +19,7 @@ public class AdminController {
 
     //отдаем страницу администратора
     @GetMapping("/admin-profile")
-    public String getViewAsAdmin(Model model) {
+    public String getViewAsAdmin() {
         return "admin-profile";
     }
 
@@ -65,8 +65,19 @@ public class AdminController {
         return "redirect:/admin-profile/deleting";
     }
 
+    //отдаем страницу для изменения данных арены
+    @GetMapping("/admin-profile/changing")
+    public String changeArena(Model model) {
+        model.addAttribute("arenas", adminService.getAllArenas());
+        return "changing";
+    }
 
-
+    //отдаем страницу с конкретной ареной для изменения
+    @GetMapping("/admin-profile/changing/{arenaId}")
+    public String updateArena(Model model, @PathVariable Integer arenaId) {
+        model.addAttribute("arena", adminService.getArenaById(arenaId));
+        return "updating";
+    }
 
 
 
