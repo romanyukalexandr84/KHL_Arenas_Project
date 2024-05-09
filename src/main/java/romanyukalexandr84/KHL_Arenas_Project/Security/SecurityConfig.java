@@ -12,9 +12,11 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+//класс - конфигурация безопасности
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+
     //в конфигурацию безопасности внедряем зависимость - обработчик аутентификации
     @Autowired
     private AuthHandler authenticationSuccessHandler;

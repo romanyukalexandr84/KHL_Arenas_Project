@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Service.AdminService;
-
 import java.io.IOException;
 
 //класс контролер администратора - обрабатывает входящие запросы на сервер от админа
 @org.springframework.stereotype.Controller
 @AllArgsConstructor
 public class AdminController {
+
     //в контролер внедряем зависимость - сервис администратора
     private final AdminService adminService;
 
@@ -65,7 +65,7 @@ public class AdminController {
         return "redirect:/admin-profile/deleting";
     }
 
-    //отдаем страницу для изменения данных арены
+    //отдаем страницу для изменения данных
     @GetMapping("/admin-profile/changing")
     public String changeArena(Model model) {
         model.addAttribute("arenas", adminService.getAllArenas());
@@ -79,6 +79,10 @@ public class AdminController {
         return "updating";
     }
 
-
-
+    //отдаем страницу после изменения данных
+    @PostMapping("/admin-profile/changing")
+    public String setNewDataOfArena(Arena arena) {
+        adminService.updateArena(arena);
+        return "redirect:/admin-profile/changing";
+    }
 }

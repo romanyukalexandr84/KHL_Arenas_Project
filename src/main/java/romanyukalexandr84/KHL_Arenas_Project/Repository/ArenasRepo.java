@@ -6,10 +6,11 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 
-//интерфейс репозиторий - для операций с таблицей арены в базе данных
+//интерфейс репозиторий арен - для операций с таблицей арены в базе данных
 public interface ArenasRepo extends JpaRepository<Arena, Integer> {
 
-    //добавляем собственные методы расширяющие базовый функционал jpa-репозитория
+    //добавляем собственные методы расширяющие базовый функционал Jpa-репозитория
+
     @Query(value = "select clubs.name from clubs join arenas on arenas.club_id=clubs.id where arenas.id=:arenaId", nativeQuery = true)
     String findClubByArenaId(Integer arenaId);
 
@@ -23,5 +24,11 @@ public interface ArenasRepo extends JpaRepository<Arena, Integer> {
     @Modifying
     @Transactional
     void add(String name, Integer clubId, Integer cityId, Integer capacity, Integer entryYear,
+             String ticketsUrl, Integer attendance, String prices, Integer activitiesId);
+
+    @Query(value = "update arenas set name=:name, club_id =:clubId, city_id=:cityId, capacity=:capacity, entry_year=:entryYear, tickets_url=:ticketsUrl, attendance=:attendance, prices=:prices, activities_id=:activitiesId where id=:id", nativeQuery = true)
+    @Modifying
+    @Transactional
+    void update(Integer id, String name, Integer clubId, Integer cityId, Integer capacity, Integer entryYear,
              String ticketsUrl, Integer attendance, String prices, Integer activitiesId);
 }

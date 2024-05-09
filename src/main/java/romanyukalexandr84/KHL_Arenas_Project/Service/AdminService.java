@@ -1,13 +1,13 @@
 package romanyukalexandr84.KHL_Arenas_Project.Service;
 
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import romanyukalexandr84.KHL_Arenas_Project.Aspect.TrackUserAction;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.MessagesRepo;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,7 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class AdminService {
+
     //в сервис внедряем зависимости - репозитории арен и сообщений
     private final ArenasRepo arenasRepo;
     private final MessagesRepo messagesRepo;
@@ -51,7 +52,7 @@ public class AdminService {
     //Просмотр всех арен
     @TrackUserAction
     public List<Arena> getAllArenas() {
-        return arenasRepo.findAll();
+        return arenasRepo.findAll(Sort.by(Sort.Order.asc("id")));
     }
 
     //Добавление арены
@@ -67,19 +68,16 @@ public class AdminService {
         arenasRepo.deleteById(id);
     }
 
-
-
-
-
-
-
-
-
-
     //Получение арены по id
     @TrackUserAction
     public Arena getArenaById(Integer id) {
         return arenasRepo.findById(id).orElse(null);
     }
 
+    //Изменение данных арены
+    @TrackUserAction
+    public void updateArena(Arena arena) {
+        arenasRepo.update(arena.getId(), arena.getName(), arena.getClubId(), arena.getCityId(), arena.getCapacity(),
+                arena.getEntryYear(), arena.getTicketsURL(), arena.getAttendance(), arena.getPrices(), arena.getActivitiesId());
+    }
 }

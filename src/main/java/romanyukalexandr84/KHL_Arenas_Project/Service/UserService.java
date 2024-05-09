@@ -8,13 +8,13 @@ import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.MessagesRepo;
-
 import java.util.*;
 
 //сервис пользователя - методы бизнес-логики для пользователя
 @Service
 @AllArgsConstructor
 public class UserService {
+
     //в сервис внедряем зависимости - репозитории арен и сообщений
     private final ArenasRepo arenasRepo;
     private final MessagesRepo messagesRepo;
@@ -22,7 +22,7 @@ public class UserService {
     //Просмотр всех арен
     @TrackUserAction
     public List<Arena> getAllArenas() {
-        return arenasRepo.findAll();
+        return arenasRepo.findAll(Sort.by(Sort.Order.asc("id")));
     }
 
     //Получение арены по id

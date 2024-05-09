@@ -14,6 +14,7 @@ import romanyukalexandr84.KHL_Arenas_Project.Service.UserService;
 @org.springframework.stereotype.Controller
 @AllArgsConstructor
 public class UserController {
+
     //в контролер внедряем зависимость - сервис пользователя
     private final UserService userService;
 
