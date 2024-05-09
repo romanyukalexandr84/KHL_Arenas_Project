@@ -1360,3 +1360,343 @@ java.lang.IllegalArgumentException: Attribute name cannot be null or empty
 09-05-2024 15:34:49 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
 09-05-2024 15:34:49 INFO  HikariPool-1 - Shutdown initiated...
 09-05-2024 15:34:49 INFO  HikariPool-1 - Shutdown completed.
+09-05-2024 15:42:35 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 23069 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+09-05-2024 15:42:35 INFO  No active profile set, falling back to 1 default profile: "default"
+09-05-2024 15:42:36 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-05-2024 15:42:36 INFO  Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+09-05-2024 15:42:37 INFO  Tomcat initialized with port 8080 (http)
+09-05-2024 15:42:37 INFO  Starting service [Tomcat]
+09-05-2024 15:42:37 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+09-05-2024 15:42:37 INFO  Initializing Spring embedded WebApplicationContext
+09-05-2024 15:42:37 INFO  Root WebApplicationContext: initialization completed in 1198 ms
+09-05-2024 15:42:37 INFO  HikariPool-1 - Starting...
+09-05-2024 15:42:37 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16d0e521
+09-05-2024 15:42:37 INFO  HikariPool-1 - Start completed.
+09-05-2024 15:42:37 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+09-05-2024 15:42:37 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+09-05-2024 15:42:37 INFO  HHH000026: Second-level cache disabled
+09-05-2024 15:42:37 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+09-05-2024 15:42:37 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09-05-2024 15:42:38 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09-05-2024 15:42:38 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 15:42:38 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+09-05-2024 15:42:38 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-05-2024 15:42:39 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4197e859, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73072745, org.springframework.security.web.context.SecurityContextHolderFilter@2ddb6c71, org.springframework.security.web.header.HeaderWriterFilter@2c750b69, org.springframework.web.filter.CorsFilter@4bdbfbc6, org.springframework.security.web.authentication.logout.LogoutFilter@3b72860c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37922937, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c569caf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29a5f924, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79735611, org.springframework.security.web.access.ExceptionTranslationFilter@446fb72e, org.springframework.security.web.access.intercept.AuthorizationFilter@6bc08a77]
+09-05-2024 15:42:39 INFO  Tomcat started on port 8080 (http) with context path ''
+09-05-2024 15:42:39 INFO  Started KhlArenasProjectApp in 3.837 seconds (process running for 4.145)
+09-05-2024 15:42:50 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-05-2024 15:42:50 INFO  Initializing Servlet 'dispatcherServlet'
+09-05-2024 15:42:50 INFO  Completed initialization in 1 ms
+09-05-2024 15:42:56 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:43:13 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:43:31 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:44:09 INFO  Пользователь: user1 вызвал метод: getLog с параметрами: []
+09-05-2024 15:44:25 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:44:47 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:44:51 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:45:25 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:47:01 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 15:47:01 INFO  HikariPool-1 - Shutdown initiated...
+09-05-2024 15:47:01 INFO  HikariPool-1 - Shutdown completed.
+09-05-2024 15:47:06 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 23632 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+09-05-2024 15:47:06 INFO  No active profile set, falling back to 1 default profile: "default"
+09-05-2024 15:47:07 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-05-2024 15:47:07 INFO  Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+09-05-2024 15:47:08 INFO  Tomcat initialized with port 8080 (http)
+09-05-2024 15:47:08 INFO  Starting service [Tomcat]
+09-05-2024 15:47:08 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+09-05-2024 15:47:08 INFO  Initializing Spring embedded WebApplicationContext
+09-05-2024 15:47:08 INFO  Root WebApplicationContext: initialization completed in 1264 ms
+09-05-2024 15:47:08 INFO  HikariPool-1 - Starting...
+09-05-2024 15:47:08 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35cec305
+09-05-2024 15:47:08 INFO  HikariPool-1 - Start completed.
+09-05-2024 15:47:08 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+09-05-2024 15:47:08 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+09-05-2024 15:47:08 INFO  HHH000026: Second-level cache disabled
+09-05-2024 15:47:08 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+09-05-2024 15:47:08 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09-05-2024 15:47:09 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09-05-2024 15:47:09 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 15:47:09 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+09-05-2024 15:47:09 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-05-2024 15:47:10 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bdbfbc6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79735611, org.springframework.security.web.context.SecurityContextHolderFilter@6c569caf, org.springframework.security.web.header.HeaderWriterFilter@6484364f, org.springframework.web.filter.CorsFilter@758ac46, org.springframework.security.web.authentication.logout.LogoutFilter@674d2b8b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8961e55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f6ba085, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e1ce99c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d2f8ee7, org.springframework.security.web.access.ExceptionTranslationFilter@4411a0fe, org.springframework.security.web.access.intercept.AuthorizationFilter@73483d4b]
+09-05-2024 15:47:10 INFO  Tomcat started on port 8080 (http) with context path ''
+09-05-2024 15:47:10 INFO  Started KhlArenasProjectApp in 4.013 seconds (process running for 4.295)
+09-05-2024 15:47:17 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-05-2024 15:47:17 INFO  Initializing Servlet 'dispatcherServlet'
+09-05-2024 15:47:17 INFO  Completed initialization in 0 ms
+09-05-2024 15:47:22 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:47:33 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 15:47:35 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 15:47:37 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:47:39 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:47:41 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:47:51 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:47:55 INFO  Пользователь: user1 вызвал метод: getArenaById с параметрами: [1]
+09-05-2024 15:47:55 INFO  Пользователь: user1 вызвал метод: getClubNameByArenaId с параметрами: [1]
+09-05-2024 15:47:55 INFO  Пользователь: user1 вызвал метод: getCityNameByArenaId с параметрами: [1]
+09-05-2024 15:47:55 INFO  Пользователь: user1 вызвал метод: getActivitiesByArenaId с параметрами: [1]
+09-05-2024 15:47:56 INFO  Пользователь: user1 вызвал метод: getArenaById с параметрами: [1]
+09-05-2024 15:47:59 INFO  Пользователь: user1 вызвал метод: getArenaById с параметрами: [1]
+09-05-2024 15:47:59 INFO  Пользователь: user1 вызвал метод: getClubNameByArenaId с параметрами: [1]
+09-05-2024 15:47:59 INFO  Пользователь: user1 вызвал метод: getCityNameByArenaId с параметрами: [1]
+09-05-2024 15:47:59 INFO  Пользователь: user1 вызвал метод: getActivitiesByArenaId с параметрами: [1]
+09-05-2024 15:48:01 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:48:21 INFO  Пользователь: user1 вызвал метод: getLog с параметрами: []
+09-05-2024 15:49:01 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 15:49:01 INFO  HikariPool-1 - Shutdown initiated...
+09-05-2024 15:49:01 INFO  HikariPool-1 - Shutdown completed.
+09-05-2024 15:49:28 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 23975 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+09-05-2024 15:49:28 INFO  No active profile set, falling back to 1 default profile: "default"
+09-05-2024 15:49:29 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-05-2024 15:49:29 INFO  Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+09-05-2024 15:49:29 INFO  Tomcat initialized with port 8080 (http)
+09-05-2024 15:49:29 INFO  Starting service [Tomcat]
+09-05-2024 15:49:29 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+09-05-2024 15:49:29 INFO  Initializing Spring embedded WebApplicationContext
+09-05-2024 15:49:29 INFO  Root WebApplicationContext: initialization completed in 1310 ms
+09-05-2024 15:49:30 INFO  HikariPool-1 - Starting...
+09-05-2024 15:49:30 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@110e9982
+09-05-2024 15:49:30 INFO  HikariPool-1 - Start completed.
+09-05-2024 15:49:30 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+09-05-2024 15:49:30 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+09-05-2024 15:49:30 INFO  HHH000026: Second-level cache disabled
+09-05-2024 15:49:30 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+09-05-2024 15:49:30 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09-05-2024 15:49:31 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09-05-2024 15:49:31 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 15:49:31 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+09-05-2024 15:49:31 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-05-2024 15:49:31 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2aeb3f3b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@281028ce, org.springframework.security.web.context.SecurityContextHolderFilter@202fd4c4, org.springframework.security.web.header.HeaderWriterFilter@1c80f8dd, org.springframework.web.filter.CorsFilter@46ef7340, org.springframework.security.web.authentication.logout.LogoutFilter@593e594f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47629063, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f1b2f07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@674d2b8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75caecf7, org.springframework.security.web.access.ExceptionTranslationFilter@7747571c, org.springframework.security.web.access.intercept.AuthorizationFilter@7fa2473a]
+09-05-2024 15:49:32 INFO  Tomcat started on port 8080 (http) with context path ''
+09-05-2024 15:49:32 INFO  Started KhlArenasProjectApp in 4.099 seconds (process running for 4.421)
+09-05-2024 15:49:50 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-05-2024 15:49:50 INFO  Initializing Servlet 'dispatcherServlet'
+09-05-2024 15:49:50 INFO  Completed initialization in 1 ms
+09-05-2024 15:49:56 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:52:07 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:52:18 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [1]
+09-05-2024 15:52:18 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [1]
+09-05-2024 15:52:18 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [1]
+09-05-2024 15:52:18 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [1]
+09-05-2024 15:52:20 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [1]
+09-05-2024 15:52:24 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [1]
+09-05-2024 15:52:24 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [1]
+09-05-2024 15:52:24 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [1]
+09-05-2024 15:52:24 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [1]
+09-05-2024 15:52:26 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [11]
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [11]
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [11]
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [11]
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [5]
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [5]
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [5]
+09-05-2024 15:52:32 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [5]
+09-05-2024 15:52:36 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:52:44 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:55:43 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 15:55:46 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 15:55:48 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:55:51 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:55:54 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:55:56 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [20]
+09-05-2024 15:56:02 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:56:58 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:57:19 INFO  Пользователь: admin вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=admin, body=вот это да!)]
+09-05-2024 15:57:19 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:57:19 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:57:22 INFO  Пользователь: admin вызвал метод: getArenasSortedByCapacity с параметрами: []
+09-05-2024 15:57:24 INFO  Пользователь: admin вызвал метод: getArenasSortedByEntryYear с параметрами: []
+09-05-2024 15:57:25 INFO  Пользователь: admin вызвал метод: getArenasSortedByAttendance с параметрами: []
+09-05-2024 15:57:26 INFO  Пользователь: admin вызвал метод: getArenasSortedByFillPercentage с параметрами: []
+09-05-2024 15:57:27 INFO  Пользователь: admin вызвал метод: getArenasSortedByRevenue с параметрами: []
+09-05-2024 15:57:29 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [5]
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getClubNameByArenaId с параметрами: [5]
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getCityNameByArenaId с параметрами: [5]
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getActivitiesByArenaId с параметрами: [5]
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [7]
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getClubNameByArenaId с параметрами: [7]
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getCityNameByArenaId с параметрами: [7]
+09-05-2024 15:57:44 INFO  Пользователь: admin вызвал метод: getActivitiesByArenaId с параметрами: [7]
+09-05-2024 15:57:49 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:57:54 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [2]
+09-05-2024 15:57:54 INFO  Пользователь: admin вызвал метод: getClubNameByArenaId с параметрами: [2]
+09-05-2024 15:57:54 INFO  Пользователь: admin вызвал метод: getCityNameByArenaId с параметрами: [2]
+09-05-2024 15:57:54 INFO  Пользователь: admin вызвал метод: getActivitiesByArenaId с параметрами: [2]
+09-05-2024 15:57:56 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [2]
+09-05-2024 15:58:05 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [2]
+09-05-2024 15:58:05 INFO  Пользователь: admin вызвал метод: getClubNameByArenaId с параметрами: [2]
+09-05-2024 15:58:05 INFO  Пользователь: admin вызвал метод: getCityNameByArenaId с параметрами: [2]
+09-05-2024 15:58:05 INFO  Пользователь: admin вызвал метод: getActivitiesByArenaId с параметрами: [2]
+09-05-2024 15:58:07 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:58:11 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [6]
+09-05-2024 15:58:11 INFO  Пользователь: admin вызвал метод: getClubNameByArenaId с параметрами: [6]
+09-05-2024 15:58:11 INFO  Пользователь: admin вызвал метод: getCityNameByArenaId с параметрами: [6]
+09-05-2024 15:58:11 INFO  Пользователь: admin вызвал метод: getActivitiesByArenaId с параметрами: [6]
+09-05-2024 15:58:12 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [6]
+09-05-2024 15:58:15 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [6]
+09-05-2024 15:58:15 INFO  Пользователь: admin вызвал метод: getClubNameByArenaId с параметрами: [6]
+09-05-2024 15:58:15 INFO  Пользователь: admin вызвал метод: getCityNameByArenaId с параметрами: [6]
+09-05-2024 15:58:15 INFO  Пользователь: admin вызвал метод: getActivitiesByArenaId с параметрами: [6]
+09-05-2024 15:58:17 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:58:20 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:58:24 INFO  Пользователь: admin вызвал метод: getArenasSortedByFillPercentage с параметрами: []
+09-05-2024 15:58:25 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:59:36 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:59:47 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 15:59:55 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:00:17 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 16:00:26 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 16:00:40 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:00:57 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:01:00 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:01:03 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:01:04 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [5]
+09-05-2024 16:01:12 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:01:51 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:02:04 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 16:02:11 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:02:20 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:02:23 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:02:26 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:02:36 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [11]
+09-05-2024 16:02:38 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:02:40 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [21]
+09-05-2024 16:02:41 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:02:45 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:02:48 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:02:54 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 16:04:19 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:04:54 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:04:56 INFO  Пользователь: user3 вызвал метод: getArenasSortedByCapacity с параметрами: []
+09-05-2024 16:04:59 INFO  Пользователь: user3 вызвал метод: getArenasSortedByEntryYear с параметрами: []
+09-05-2024 16:05:00 INFO  Пользователь: user3 вызвал метод: getArenasSortedByAttendance с параметрами: []
+09-05-2024 16:05:01 INFO  Пользователь: user3 вызвал метод: getArenasSortedByFillPercentage с параметрами: []
+09-05-2024 16:05:03 INFO  Пользователь: user3 вызвал метод: getArenasSortedByRevenue с параметрами: []
+09-05-2024 16:05:06 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:05:08 INFO  Пользователь: user3 вызвал метод: getArenasSortedByRevenue с параметрами: []
+09-05-2024 16:05:09 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [3]
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [3]
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [3]
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [3]
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [6]
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [6]
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [6]
+09-05-2024 16:05:15 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [6]
+09-05-2024 16:05:26 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:07:11 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:07:20 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [2]
+09-05-2024 16:07:20 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [2]
+09-05-2024 16:07:20 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [2]
+09-05-2024 16:07:20 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+09-05-2024 16:07:26 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [2]
+09-05-2024 16:07:35 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [2]
+09-05-2024 16:07:35 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [2]
+09-05-2024 16:07:35 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [2]
+09-05-2024 16:07:35 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+09-05-2024 16:07:36 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [3]
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [3]
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [3]
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [3]
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [5]
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [5]
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [5]
+09-05-2024 16:09:14 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [5]
+09-05-2024 16:09:18 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:09:29 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:09:41 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 16:09:44 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:09:54 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:09:59 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:10:10 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:10:13 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:10:21 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [7]
+09-05-2024 16:10:34 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:10:38 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:14:58 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 16:14:58 INFO  HikariPool-1 - Shutdown initiated...
+09-05-2024 16:14:58 INFO  HikariPool-1 - Shutdown completed.
+09-05-2024 16:15:02 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 25477 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+09-05-2024 16:15:02 INFO  No active profile set, falling back to 1 default profile: "default"
+09-05-2024 16:15:03 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-05-2024 16:15:03 INFO  Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+09-05-2024 16:15:03 INFO  Tomcat initialized with port 8080 (http)
+09-05-2024 16:15:04 INFO  Starting service [Tomcat]
+09-05-2024 16:15:04 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+09-05-2024 16:15:04 INFO  Initializing Spring embedded WebApplicationContext
+09-05-2024 16:15:04 INFO  Root WebApplicationContext: initialization completed in 1218 ms
+09-05-2024 16:15:04 INFO  HikariPool-1 - Starting...
+09-05-2024 16:15:04 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@446e7065
+09-05-2024 16:15:04 INFO  HikariPool-1 - Start completed.
+09-05-2024 16:15:04 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+09-05-2024 16:15:04 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+09-05-2024 16:15:04 INFO  HHH000026: Second-level cache disabled
+09-05-2024 16:15:04 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+09-05-2024 16:15:04 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09-05-2024 16:15:05 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09-05-2024 16:15:05 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 16:15:05 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+09-05-2024 16:15:05 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-05-2024 16:15:05 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2aeb3f3b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@281028ce, org.springframework.security.web.context.SecurityContextHolderFilter@202fd4c4, org.springframework.security.web.header.HeaderWriterFilter@1c80f8dd, org.springframework.web.filter.CorsFilter@46ef7340, org.springframework.security.web.authentication.logout.LogoutFilter@593e594f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@47629063, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f1b2f07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@674d2b8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75caecf7, org.springframework.security.web.access.ExceptionTranslationFilter@7747571c, org.springframework.security.web.access.intercept.AuthorizationFilter@7fa2473a]
+09-05-2024 16:15:06 INFO  Tomcat started on port 8080 (http) with context path ''
+09-05-2024 16:15:06 INFO  Started KhlArenasProjectApp in 3.873 seconds (process running for 4.156)
+09-05-2024 16:15:12 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-05-2024 16:15:12 INFO  Initializing Servlet 'dispatcherServlet'
+09-05-2024 16:15:12 INFO  Completed initialization in 1 ms
+09-05-2024 16:15:17 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:15:29 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 16:15:31 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:15:58 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:16:19 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:16:21 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [9]
+09-05-2024 16:16:25 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:16:32 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [1]
+09-05-2024 16:16:34 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:16:36 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [23]
+09-05-2024 16:16:46 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:16:49 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [13]
+09-05-2024 16:18:38 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 16:18:38 INFO  HikariPool-1 - Shutdown initiated...
+09-05-2024 16:18:38 INFO  HikariPool-1 - Shutdown completed.
+09-05-2024 16:18:41 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 25806 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+09-05-2024 16:18:41 INFO  No active profile set, falling back to 1 default profile: "default"
+09-05-2024 16:18:42 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-05-2024 16:18:42 INFO  Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
+09-05-2024 16:18:42 INFO  Tomcat initialized with port 8080 (http)
+09-05-2024 16:18:42 INFO  Starting service [Tomcat]
+09-05-2024 16:18:42 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+09-05-2024 16:18:42 INFO  Initializing Spring embedded WebApplicationContext
+09-05-2024 16:18:42 INFO  Root WebApplicationContext: initialization completed in 1296 ms
+09-05-2024 16:18:42 INFO  HikariPool-1 - Starting...
+09-05-2024 16:18:43 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@265a094b
+09-05-2024 16:18:43 INFO  HikariPool-1 - Start completed.
+09-05-2024 16:18:43 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+09-05-2024 16:18:43 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+09-05-2024 16:18:43 INFO  HHH000026: Second-level cache disabled
+09-05-2024 16:18:43 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+09-05-2024 16:18:43 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+09-05-2024 16:18:44 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09-05-2024 16:18:44 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 16:18:44 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+09-05-2024 16:18:44 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-05-2024 16:18:44 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@307e9c02, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@682270ff, org.springframework.security.web.context.SecurityContextHolderFilter@6771efaa, org.springframework.security.web.header.HeaderWriterFilter@28b16193, org.springframework.web.filter.CorsFilter@6bc08a77, org.springframework.security.web.authentication.logout.LogoutFilter@7747571c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c9c7e7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26caf4b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4411a0fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37922937, org.springframework.security.web.access.ExceptionTranslationFilter@4e93d23e, org.springframework.security.web.access.intercept.AuthorizationFilter@550e7ef6]
+09-05-2024 16:18:45 INFO  Tomcat started on port 8080 (http) with context path ''
+09-05-2024 16:18:45 INFO  Started KhlArenasProjectApp in 4.094 seconds (process running for 4.382)
+09-05-2024 16:18:54 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-05-2024 16:18:54 INFO  Initializing Servlet 'dispatcherServlet'
+09-05-2024 16:18:54 INFO  Completed initialization in 1 ms
+09-05-2024 16:18:57 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+09-05-2024 16:19:02 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+09-05-2024 16:19:08 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:19:12 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:19:16 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:19:19 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [7]
+09-05-2024 16:19:46 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:19:56 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+09-05-2024 16:20:39 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+09-05-2024 16:20:39 INFO  HikariPool-1 - Shutdown initiated...
+09-05-2024 16:20:39 INFO  HikariPool-1 - Shutdown completed.
