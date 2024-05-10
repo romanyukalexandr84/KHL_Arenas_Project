@@ -3798,3 +3798,711 @@ org.postgresql.util.PSQLException: ERROR: invalid input syntax for type integer:
 10-05-2024 15:40:40 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
 10-05-2024 15:40:40 INFO  HikariPool-1 - Shutdown initiated...
 10-05-2024 15:40:40 INFO  HikariPool-1 - Shutdown completed.
+10-05-2024 21:54:14 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 36110 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+10-05-2024 21:54:14 INFO  No active profile set, falling back to 1 default profile: "default"
+10-05-2024 21:54:15 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10-05-2024 21:54:15 INFO  Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+10-05-2024 21:54:16 INFO  Tomcat initialized with port 8080 (http)
+10-05-2024 21:54:16 INFO  Starting service [Tomcat]
+10-05-2024 21:54:16 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+10-05-2024 21:54:16 INFO  Initializing Spring embedded WebApplicationContext
+10-05-2024 21:54:16 INFO  Root WebApplicationContext: initialization completed in 1445 ms
+10-05-2024 21:54:16 INFO  HikariPool-1 - Starting...
+10-05-2024 21:54:16 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@433ea2ac
+10-05-2024 21:54:16 INFO  HikariPool-1 - Start completed.
+10-05-2024 21:54:16 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+10-05-2024 21:54:16 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+10-05-2024 21:54:16 INFO  HHH000026: Second-level cache disabled
+10-05-2024 21:54:17 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+10-05-2024 21:54:17 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+10-05-2024 21:54:17 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+10-05-2024 21:54:17 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-05-2024 21:54:17 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+10-05-2024 21:54:18 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10-05-2024 21:54:18 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5abc488d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30d944d8, org.springframework.security.web.context.SecurityContextHolderFilter@67062a93, org.springframework.security.web.header.HeaderWriterFilter@7552f05b, org.springframework.web.filter.CorsFilter@1c76b2fe, org.springframework.security.web.authentication.logout.LogoutFilter@8961e55, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5466a819, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7747571c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69e308e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fa2473a, org.springframework.security.web.access.ExceptionTranslationFilter@6889e714, org.springframework.security.web.access.intercept.AuthorizationFilter@65a3d7c9]
+10-05-2024 21:54:18 INFO  Tomcat started on port 8080 (http) with context path ''
+10-05-2024 21:54:18 INFO  Started KhlArenasProjectApp in 4.158 seconds (process running for 4.553)
+10-05-2024 21:54:32 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+10-05-2024 21:54:32 INFO  Initializing Servlet 'dispatcherServlet'
+10-05-2024 21:54:32 INFO  Completed initialization in 1 ms
+10-05-2024 21:58:47 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 21:58:56 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 21:58:58 INFO  Пользователь: user2 вызвал метод: getArenasSortedByCapacity с параметрами: []
+10-05-2024 21:58:59 INFO  Пользователь: user2 вызвал метод: getArenasSortedByEntryYear с параметрами: []
+10-05-2024 21:59:00 INFO  Пользователь: user2 вызвал метод: getArenasSortedByAttendance с параметрами: []
+10-05-2024 21:59:01 INFO  Пользователь: user2 вызвал метод: getArenasSortedByFillPercentage с параметрами: []
+10-05-2024 21:59:02 INFO  Пользователь: user2 вызвал метод: getArenasSortedByRevenue с параметрами: []
+10-05-2024 21:59:03 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [2]
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [2]
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [4]
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [4]
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [4]
+10-05-2024 21:59:08 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [4]
+10-05-2024 21:59:10 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 21:59:13 WARN  Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'choice2' for method parameter type Integer is present but converted to null]
+10-05-2024 21:59:24 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 21:59:27 WARN  Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'choice1' for method parameter type Integer is present but converted to null]
+10-05-2024 21:59:34 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 21:59:37 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 21:59:37 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [2]
+10-05-2024 21:59:37 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [2]
+10-05-2024 21:59:37 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+10-05-2024 21:59:43 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 21:59:50 INFO  Пользователь: user2 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 21:59:50 INFO  Пользователь: user2 вызвал метод: getClubNameByArenaId с параметрами: [2]
+10-05-2024 21:59:50 INFO  Пользователь: user2 вызвал метод: getCityNameByArenaId с параметрами: [2]
+10-05-2024 21:59:50 INFO  Пользователь: user2 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+10-05-2024 21:59:59 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:00:19 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:00:51 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+10-05-2024 22:00:57 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:01:18 INFO  Пользователь: admin вызвал метод: createArena с параметрами: [Arena(id=null, name=jhgjh, clubId=75756, cityId=6765, capacity=657567, entryYear=6767, galleryURL=null, ticketsURL=jgjhg, attendance=56775, fillPercentage=null, prices=57675, revenue=null, activitiesId=556)]
+10-05-2024 22:01:18 WARN  SQL Error: 0, SQLState: 22P02
+10-05-2024 22:01:18 ERROR ERROR: invalid input syntax for type integer: ""
+10-05-2024 22:01:18 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: JDBC exception executing SQL [insert into arenas (name, club_id, city_id, capacity, entry_year, tickets_url, attendance, prices, activities_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)] [ERROR: invalid input syntax for type integer: ""] [n/a]; SQL [n/a]] with root cause
+org.postgresql.util.PSQLException: ERROR: invalid input syntax for type integer: ""
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.exec.internal.StandardJdbcMutationExecutor.execute(StandardJdbcMutationExecutor.java:87)
+	at org.hibernate.query.sql.internal.NativeNonSelectQueryPlanImpl.executeUpdate(NativeNonSelectQueryPlanImpl.java:76)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doExecuteUpdate(NativeQueryImpl.java:833)
+	at org.hibernate.query.spi.AbstractQuery.executeUpdate(AbstractQuery.java:650)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:266)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy116.add(Unknown Source)
+	at romanyukalexandr84.KHL_Arenas_Project.Service.AdminService.createArena(AdminService.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at romanyukalexandr84.KHL_Arenas_Project.Service.AdminService$$SpringCGLIB$$0.createArena(<generated>)
+	at romanyukalexandr84.KHL_Arenas_Project.Controller.AdminController.createArena(AdminController.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+10-05-2024 22:01:40 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:01:54 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:02:00 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:02:03 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [8]
+10-05-2024 22:02:18 INFO  Пользователь: admin вызвал метод: updateArena с параметрами: [Arena(id=8, name=Дворец спорта «Мегаспорт», clubId=8, cityId=6, capacity=11748, entryYear=2006, galleryURL=null, ticketsURL=https://tickets.spartak.ru/tickets, attendance=6498, fillPercentage=null, prices=390-900, revenue=null, activitiesId=8)]
+10-05-2024 22:02:18 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:02:20 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:02:29 INFO  Пользователь: admin вызвал метод: updateArena с параметрами: [Arena(id=11, name=Татнефть Арена, clubId=11, cityId=9, capacity=8900, entryYear=2005, galleryURL=null, ticketsURL=https://www.ak-bars.ru/tickets, attendance=7028, fillPercentage=null, prices=64565ytrhrt, revenue=null, activitiesId=11)]
+10-05-2024 22:02:29 WARN  SQL Error: 0, SQLState: 22P02
+10-05-2024 22:02:29 ERROR ERROR: invalid input syntax for type integer: "64565ytrhrt"
+10-05-2024 22:02:29 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: JDBC exception executing SQL [update arenas set name=?, club_id =?, city_id=?, capacity=?, entry_year=?, tickets_url=?, attendance=?, prices=?, activities_id=? where id=?] [ERROR: invalid input syntax for type integer: "64565ytrhrt"] [n/a]; SQL [n/a]] with root cause
+org.postgresql.util.PSQLException: ERROR: invalid input syntax for type integer: "64565ytrhrt"
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.exec.internal.StandardJdbcMutationExecutor.execute(StandardJdbcMutationExecutor.java:87)
+	at org.hibernate.query.sql.internal.NativeNonSelectQueryPlanImpl.executeUpdate(NativeNonSelectQueryPlanImpl.java:76)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doExecuteUpdate(NativeQueryImpl.java:833)
+	at org.hibernate.query.spi.AbstractQuery.executeUpdate(AbstractQuery.java:650)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:266)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy116.update(Unknown Source)
+	at romanyukalexandr84.KHL_Arenas_Project.Service.AdminService.updateArena(AdminService.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at romanyukalexandr84.KHL_Arenas_Project.Service.AdminService$$SpringCGLIB$$0.updateArena(<generated>)
+	at romanyukalexandr84.KHL_Arenas_Project.Controller.AdminController.setNewDataOfArena(AdminController.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+10-05-2024 22:02:31 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:02:33 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:02:34 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:02:37 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:11:20 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+10-05-2024 22:11:20 INFO  HikariPool-1 - Shutdown initiated...
+10-05-2024 22:11:20 INFO  HikariPool-1 - Shutdown completed.
+10-05-2024 22:15:28 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 38184 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+10-05-2024 22:15:28 INFO  No active profile set, falling back to 1 default profile: "default"
+10-05-2024 22:15:29 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10-05-2024 22:15:29 INFO  Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+10-05-2024 22:15:30 INFO  Tomcat initialized with port 8080 (http)
+10-05-2024 22:15:30 INFO  Starting service [Tomcat]
+10-05-2024 22:15:30 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+10-05-2024 22:15:30 INFO  Initializing Spring embedded WebApplicationContext
+10-05-2024 22:15:30 INFO  Root WebApplicationContext: initialization completed in 1308 ms
+10-05-2024 22:15:30 INFO  HikariPool-1 - Starting...
+10-05-2024 22:15:30 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f6cc7da
+10-05-2024 22:15:30 INFO  HikariPool-1 - Start completed.
+10-05-2024 22:15:30 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+10-05-2024 22:15:30 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+10-05-2024 22:15:30 INFO  HHH000026: Second-level cache disabled
+10-05-2024 22:15:30 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+10-05-2024 22:15:31 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+10-05-2024 22:15:31 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+10-05-2024 22:15:31 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-05-2024 22:15:32 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+10-05-2024 22:15:32 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10-05-2024 22:15:32 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43c64d6f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b247ef6, org.springframework.security.web.context.SecurityContextHolderFilter@47800bd7, org.springframework.security.web.header.HeaderWriterFilter@77185a2, org.springframework.web.filter.CorsFilter@188532da, org.springframework.security.web.authentication.logout.LogoutFilter@3bdc8975, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@492d38a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@212be8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fe21d0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f10927f, org.springframework.security.web.access.ExceptionTranslationFilter@3cc2c4b8, org.springframework.security.web.access.intercept.AuthorizationFilter@4f93a8f6]
+10-05-2024 22:15:32 INFO  Tomcat started on port 8080 (http) with context path ''
+10-05-2024 22:15:32 INFO  Started KhlArenasProjectApp in 4.503 seconds (process running for 4.843)
+10-05-2024 22:15:43 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+10-05-2024 22:15:43 INFO  Initializing Servlet 'dispatcherServlet'
+10-05-2024 22:15:43 INFO  Completed initialization in 2 ms
+10-05-2024 22:15:48 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:15:50 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 22:15:50 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [2]
+10-05-2024 22:15:50 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [2]
+10-05-2024 22:15:50 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+10-05-2024 22:15:53 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 22:15:55 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 22:15:55 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [2]
+10-05-2024 22:15:55 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [2]
+10-05-2024 22:15:55 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+10-05-2024 22:15:57 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [3]
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [3]
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [3]
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [3]
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [4]
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [4]
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [4]
+10-05-2024 22:16:01 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [4]
+10-05-2024 22:16:02 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:16:12 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:18:27 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+10-05-2024 22:18:29 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:19:02 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:19:22 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:19:28 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:19:34 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:19:36 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:19:39 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:19:41 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [10]
+10-05-2024 22:19:49 INFO  Пользователь: admin вызвал метод: updateArena с параметрами: [Arena(id=10, name=ЦСКА Арена, clubId=10, cityId=6, capacity=12300, entryYear=2015, galleryURL=null, ticketsURL=https://cska-hockey.ru/tickets/ticket-program, attendance=6531, fillPercentage=null, prices=44565, revenue=null, activitiesId=10)]
+10-05-2024 22:19:49 WARN  SQL Error: 0, SQLState: 22P02
+10-05-2024 22:19:49 ERROR ERROR: invalid input syntax for type integer: ""
+10-05-2024 22:19:49 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: JDBC exception executing SQL [update arenas set name=?, club_id =?, city_id=?, capacity=?, entry_year=?, tickets_url=?, attendance=?, prices=?, activities_id=? where id=?] [ERROR: invalid input syntax for type integer: ""] [n/a]; SQL [n/a]] with root cause
+org.postgresql.util.PSQLException: ERROR: invalid input syntax for type integer: ""
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.exec.internal.StandardJdbcMutationExecutor.execute(StandardJdbcMutationExecutor.java:87)
+	at org.hibernate.query.sql.internal.NativeNonSelectQueryPlanImpl.executeUpdate(NativeNonSelectQueryPlanImpl.java:76)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doExecuteUpdate(NativeQueryImpl.java:833)
+	at org.hibernate.query.spi.AbstractQuery.executeUpdate(AbstractQuery.java:650)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$ModifyingExecution.doExecute(JpaQueryExecution.java:266)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy116.update(Unknown Source)
+	at romanyukalexandr84.KHL_Arenas_Project.Service.AdminService.updateArena(AdminService.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at romanyukalexandr84.KHL_Arenas_Project.Service.AdminService$$SpringCGLIB$$0.updateArena(<generated>)
+	at romanyukalexandr84.KHL_Arenas_Project.Controller.AdminController.setNewDataOfArena(AdminController.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+10-05-2024 22:19:51 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [10]
+10-05-2024 22:19:52 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:19:55 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:20:53 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:22:06 INFO  Пользователь: user1 вызвал метод: saveMessage с параметрами: [Message(id=null, fromUser=user1, body=Тестим сообщения)]
+10-05-2024 22:22:06 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:22:06 INFO  Пользователь: user1 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:22:14 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:22:41 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+10-05-2024 22:23:31 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+10-05-2024 22:23:31 INFO  HikariPool-1 - Shutdown initiated...
+10-05-2024 22:23:31 INFO  HikariPool-1 - Shutdown completed.
+10-05-2024 22:29:55 INFO  Starting KhlArenasProjectApp using Java 21.0.2 with PID 38957 (/home/alex/Рабочий стол/Диплом/KHL_Arenas_Project/target/classes started by alex in /home/alex/Рабочий стол/Диплом/KHL_Arenas_Project)
+10-05-2024 22:29:55 INFO  No active profile set, falling back to 1 default profile: "default"
+10-05-2024 22:29:56 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10-05-2024 22:29:56 INFO  Finished Spring Data repository scanning in 53 ms. Found 5 JPA repository interfaces.
+10-05-2024 22:29:56 INFO  Tomcat initialized with port 8080 (http)
+10-05-2024 22:29:56 INFO  Starting service [Tomcat]
+10-05-2024 22:29:56 INFO  Starting Servlet engine: [Apache Tomcat/10.1.20]
+10-05-2024 22:29:56 INFO  Initializing Spring embedded WebApplicationContext
+10-05-2024 22:29:56 INFO  Root WebApplicationContext: initialization completed in 1300 ms
+10-05-2024 22:29:57 INFO  HikariPool-1 - Starting...
+10-05-2024 22:29:57 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29f3c438
+10-05-2024 22:29:57 INFO  HikariPool-1 - Start completed.
+10-05-2024 22:29:57 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+10-05-2024 22:29:57 INFO  HHH000412: Hibernate ORM core version 6.4.4.Final
+10-05-2024 22:29:57 INFO  HHH000026: Second-level cache disabled
+10-05-2024 22:29:57 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+10-05-2024 22:29:57 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+10-05-2024 22:29:58 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+10-05-2024 22:29:58 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+10-05-2024 22:29:58 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+10-05-2024 22:29:58 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10-05-2024 22:29:59 INFO  Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36570936, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@775fec4, org.springframework.security.web.context.SecurityContextHolderFilter@a0e35c3, org.springframework.security.web.header.HeaderWriterFilter@212be8c, org.springframework.web.filter.CorsFilter@c7d173f, org.springframework.security.web.authentication.logout.LogoutFilter@5ed463b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b247ef6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@325a781c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@113e6e06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12f12744, org.springframework.security.web.access.ExceptionTranslationFilter@7d381eae, org.springframework.security.web.access.intercept.AuthorizationFilter@43c64d6f]
+10-05-2024 22:29:59 INFO  Tomcat started on port 8080 (http) with context path ''
+10-05-2024 22:29:59 INFO  Started KhlArenasProjectApp in 4.124 seconds (process running for 4.449)
+10-05-2024 22:30:12 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+10-05-2024 22:30:12 INFO  Initializing Servlet 'dispatcherServlet'
+10-05-2024 22:30:12 INFO  Completed initialization in 1 ms
+10-05-2024 22:30:17 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:30:24 WARN  Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'choice1' for method parameter type Integer is present but converted to null]
+10-05-2024 22:30:28 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:30:44 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:30:44 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [11]
+10-05-2024 22:30:44 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [11]
+10-05-2024 22:30:44 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [11]
+10-05-2024 22:30:50 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:30:52 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:30:52 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [11]
+10-05-2024 22:30:52 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [11]
+10-05-2024 22:30:52 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [11]
+10-05-2024 22:31:00 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:31:42 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:31:42 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [11]
+10-05-2024 22:31:42 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [11]
+10-05-2024 22:31:42 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [11]
+10-05-2024 22:31:56 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [11]
+10-05-2024 22:31:56 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [11]
+10-05-2024 22:31:56 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [11]
+10-05-2024 22:31:56 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [11]
+10-05-2024 22:31:57 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:32:04 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [22]
+10-05-2024 22:32:04 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [22]
+10-05-2024 22:32:04 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [22]
+10-05-2024 22:32:04 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [22]
+10-05-2024 22:32:10 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [22]
+10-05-2024 22:32:10 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [22]
+10-05-2024 22:32:10 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [22]
+10-05-2024 22:32:10 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [22]
+10-05-2024 22:32:11 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:32:27 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:32:43 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:33:44 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [23]
+10-05-2024 22:33:44 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [23]
+10-05-2024 22:33:44 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [23]
+10-05-2024 22:33:44 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [23]
+10-05-2024 22:33:47 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [23]
+10-05-2024 22:34:10 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [23]
+10-05-2024 22:34:10 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [23]
+10-05-2024 22:34:10 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [23]
+10-05-2024 22:34:10 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [23]
+10-05-2024 22:34:17 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:34:24 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 22:34:24 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [2]
+10-05-2024 22:34:24 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [2]
+10-05-2024 22:34:24 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+10-05-2024 22:34:26 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 22:34:31 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [2]
+10-05-2024 22:34:31 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [2]
+10-05-2024 22:34:31 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [2]
+10-05-2024 22:34:31 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [2]
+10-05-2024 22:34:32 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:34:54 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [3]
+10-05-2024 22:34:54 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [3]
+10-05-2024 22:34:54 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [3]
+10-05-2024 22:34:54 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [3]
+10-05-2024 22:34:59 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [3]
+10-05-2024 22:34:59 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [3]
+10-05-2024 22:34:59 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [3]
+10-05-2024 22:34:59 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [3]
+10-05-2024 22:35:00 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [3]
+10-05-2024 22:35:25 INFO  Пользователь: user3 вызвал метод: getArenaById с параметрами: [3]
+10-05-2024 22:35:25 INFO  Пользователь: user3 вызвал метод: getClubNameByArenaId с параметрами: [3]
+10-05-2024 22:35:25 INFO  Пользователь: user3 вызвал метод: getCityNameByArenaId с параметрами: [3]
+10-05-2024 22:35:25 INFO  Пользователь: user3 вызвал метод: getActivitiesByArenaId с параметрами: [3]
+10-05-2024 22:35:42 INFO  Пользователь: user3 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:36:21 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:36:44 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:36:52 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+10-05-2024 22:37:07 INFO  Пользователь: admin вызвал метод: getAllMessages с параметрами: []
+10-05-2024 22:37:10 INFO  Пользователь: admin вызвал метод: getLog с параметрами: []
+10-05-2024 22:37:24 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:38:36 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:38:42 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:38:43 INFO  Пользователь: admin вызвал метод: getArenaById с параметрами: [9]
+10-05-2024 22:38:47 INFO  Пользователь: admin вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:39:01 INFO  Пользователь: user2 вызвал метод: getAllArenas с параметрами: []
+10-05-2024 22:39:38 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+10-05-2024 22:39:38 INFO  HikariPool-1 - Shutdown initiated...
+10-05-2024 22:39:38 INFO  HikariPool-1 - Shutdown completed.

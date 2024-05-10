@@ -3,7 +3,6 @@ package romanyukalexandr84.KHL_Arenas_Project.Service;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import romanyukalexandr84.KHL_Arenas_Project.Aspect.TrackUserAction;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Arena;
 import romanyukalexandr84.KHL_Arenas_Project.Model.Message;
 import romanyukalexandr84.KHL_Arenas_Project.Repository.ArenasRepo;
@@ -22,13 +21,11 @@ public class AdminService {
     private final MessagesRepo messagesRepo;
 
     //Просмотр всех сообщений от пользователей
-    @TrackUserAction
     public List<Message> getAllMessages() {
         return messagesRepo.findAll().reversed();
     }
 
     //Просмотр лога приложения
-    @TrackUserAction
     public List<String> getLog() throws IOException {
         File file = new File("src/main/java/romanyukalexandr84/KHL_Arenas_Project/Log/app-log.log");
         return readFile(file).reversed();
@@ -50,32 +47,27 @@ public class AdminService {
     }
 
     //Просмотр всех арен
-    @TrackUserAction
     public List<Arena> getAllArenas() {
         return arenasRepo.findAll(Sort.by(Sort.Order.asc("id")));
     }
 
     //Добавление арены
-    @TrackUserAction
     public void createArena(Arena arena) {
         arenasRepo.add(arena.getName(), arena.getClubId(), arena.getCityId(), arena.getCapacity(),
                 arena.getEntryYear(), arena.getTicketsURL(), arena.getAttendance(), arena.getPrices(), arena.getActivitiesId());
     }
 
     //Удаление арены
-    @TrackUserAction
     public void delArena(Integer id) {
         arenasRepo.deleteById(id);
     }
 
     //Получение арены по id
-    @TrackUserAction
     public Arena getArenaById(Integer id) {
         return arenasRepo.findById(id).orElse(null);
     }
 
     //Изменение данных арены
-    @TrackUserAction
     public void updateArena(Arena arena) {
         arenasRepo.update(arena.getId(), arena.getName(), arena.getClubId(), arena.getCityId(), arena.getCapacity(),
                 arena.getEntryYear(), arena.getTicketsURL(), arena.getAttendance(), arena.getPrices(), arena.getActivitiesId());

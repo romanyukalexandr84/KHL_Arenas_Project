@@ -10,12 +10,12 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
-//аспект для логирования вызовов методов, помеченных аннотацией TrackUserAction
+//аспект для логирования вызовов методов сервисов
 @Aspect
 @Component
 @Log
 public class TrackingAspect {
-    @Before("@annotation(romanyukalexandr84.KHL_Arenas_Project.Aspect.TrackUserAction)")
+    @Before("execution(* romanyukalexandr84.KHL_Arenas_Project.Service.*.*(..))")
     public Object logCallMethod(JoinPoint joinPoint) throws Throwable {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
