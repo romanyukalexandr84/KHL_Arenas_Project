@@ -4,7 +4,7 @@
 }
 
 .sect {
-   background: cornsilk;
+   background: aquamarine;
    margin-top: 20px;
    box-sizing: border-box;
    display: grid;
@@ -40,6 +40,7 @@ td {
 }
 
 .button {
+   border: 1px solid black;
    width: 100px;
    text-align: center;
    text-decoration: none;
@@ -98,6 +99,6 @@ td {
 }
 
 html {
-  background: url(/css/background/create.jpg) no-repeat center center fixed;
+  background: url(/css/background/addingback.jpg) no-repeat center center fixed;
   background-size: cover;
 }

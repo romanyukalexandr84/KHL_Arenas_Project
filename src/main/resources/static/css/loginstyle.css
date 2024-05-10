@@ -25,7 +25,7 @@ section {
   gap: 2px;
   flex-wrap: wrap;
   overflow: hidden;
-  background: url(/css/background/loginview.jpg) no-repeat center center fixed;
+  background: url(/css/background/loginback.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
