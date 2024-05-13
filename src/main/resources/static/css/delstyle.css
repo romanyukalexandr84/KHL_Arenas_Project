@@ -99,7 +99,7 @@ td {
     padding-left: 5px;
 }
 
-html {
-  background: url(/css/background/delback.jpg) no-repeat center center fixed;
+body {
+  background: url(/css/background/delback.jpg) no-repeat center center;
   background-size: cover;
 }

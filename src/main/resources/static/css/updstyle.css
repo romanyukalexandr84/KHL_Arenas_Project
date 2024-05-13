@@ -105,6 +105,6 @@ td {
 }
 
 html {
-  background: url(/css/background/updback.jpg) no-repeat center center fixed;
+  background: url(/css/background/updback.jpg) no-repeat center center;
   background-size: cover;
 }

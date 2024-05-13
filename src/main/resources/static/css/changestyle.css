@@ -111,7 +111,7 @@ a:hover {
     border-bottom: 1px dashed black;
 }
 
-html {
-  background: url(/css/background/changeback.jpg) no-repeat center center fixed;
+body {
+  background: url(/css/background/changeback.jpg) no-repeat center center;
   background-size: cover;
 }
