@@ -10,6 +10,7 @@ import romanyukalexandr84.KHL_Arenas_Project.Repository.MessagesRepo;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 //сервис администратора - методы бизнес-логики для администратора
 @Service
@@ -64,7 +65,9 @@ public class AdminService {
 
     //Получение арены по id
     public Arena getArenaById(Integer id) {
-        return arenasRepo.findById(id).orElse(null);
+        if (getAllArenas().stream().filter(e -> e.getId().equals(id)).toList().getFirst() != null) {
+            return arenasRepo.findById(id).orElse(null);
+        } else throw new NoSuchElementException();
     }
 
     //Изменение данных арены

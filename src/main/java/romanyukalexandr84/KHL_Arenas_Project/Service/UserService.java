@@ -25,7 +25,9 @@ public class UserService {
 
     //Получение арены по id
     public Arena getArenaById(Integer id) {
-        return arenasRepo.findById(id).orElse(null);
+        if (getAllArenas().stream().filter(e -> e.getId().equals(id)).toList().getFirst() != null) {
+            return arenasRepo.findById(id).orElse(null);
+        } else throw new NoSuchElementException();
     }
 
     //Получение названия клуба по id арены
