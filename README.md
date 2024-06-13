@@ -6,7 +6,7 @@
 
 Перед запуском приложения необходимо развернуть Docker-контейнер (или использовать установленную базу данных Postgres на своём компьютере) с помощью команды в терминале:
 
-###### sudo docker run --name cont-postgres -e POSTGRES_PASSWORD=password -e POSTGRES_DB=arenas_db -d -p 5432:5432 postgres
+##### sudo docker run --name cont-postgres -e POSTGRES_PASSWORD=password -e POSTGRES_DB=arenas_db -d -p 5432:5432 postgres
 ####
 Для начала работы необходимо запустить файл приложения KhlArenasProjectApp
 
@@ -19,6 +19,7 @@
 логин: user2   пароль: user2pass
 
 логин: user3   пароль: user3pass
+####
 Вход для администратора:
 логин: admin   пароль: adminpass
 ###
